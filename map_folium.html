@@ -1,0 +1,4204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f752a7f64ad40de1f472adc815d4f71 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f752a7f64ad40de1f472adc815d4f71" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f752a7f64ad40de1f472adc815d4f71 = L.map(
+                "map_7f752a7f64ad40de1f472adc815d4f71",
+                {
+                    center: [-6.200561221329999, 106.82472676200001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8993323b5e4a3bd921d9fcee1689d904 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8993323b5e4a3bd921d9fcee1689d904.addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var marker_b38e50af1614c4b710dd49fce149a567 = L.marker(
+                [-6.188851, 106.824792],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_c3d8dc98afbb7389b85751995431b3a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df496b5ed0b8d73ef325375b65f476b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6fcf46c9d1528a3886e3e2f562a118d = $(`<div id="html_a6fcf46c9d1528a3886e3e2f562a118d" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">BART - Bar at The Roof Top - Artotel Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Artotel Jakarta, Lantai 7, Jl. Sunda No. 3, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Continental, Indonesian<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_df496b5ed0b8d73ef325375b65f476b5.setContent(html_a6fcf46c9d1528a3886e3e2f562a118d);
+            
+        
+
+        marker_b38e50af1614c4b710dd49fce149a567.bindPopup(popup_df496b5ed0b8d73ef325375b65f476b5)
+        ;
+
+        
+    
+    
+                marker_b38e50af1614c4b710dd49fce149a567.setIcon(icon_c3d8dc98afbb7389b85751995431b3a6);
+            
+    
+            var marker_3631d4758bd3b56d70214b970f3eacb2 = L.marker(
+                [-6.193305, 106.823805],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_1990ad6e893552788e44449eec5c8d65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ceb67227920fc32afb77f2db61fae33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03272015a969c222d64ec7e553bdebcf = $(`<div id="html_03272015a969c222d64ec7e553bdebcf" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Sana Sini Restaurant - Pullman Jakarta Indonesia</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Pullman Jakarta Indonesia, Jl. M.H. Thamrin 59, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese, Chinese, Western, Indonesian<br>       <b>Rating</b> : ⭐ 4.7<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_2ceb67227920fc32afb77f2db61fae33.setContent(html_03272015a969c222d64ec7e553bdebcf);
+            
+        
+
+        marker_3631d4758bd3b56d70214b970f3eacb2.bindPopup(popup_2ceb67227920fc32afb77f2db61fae33)
+        ;
+
+        
+    
+    
+                marker_3631d4758bd3b56d70214b970f3eacb2.setIcon(icon_1990ad6e893552788e44449eec5c8d65);
+            
+    
+            var marker_b57ed7e85a60849eb7ecfe3bc7e0818d = L.marker(
+                [-6.197871, 106.824284],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_91c604bb559b5622e66b397ec3287012 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_789be9a9e83c81dcdb299c3d50cde280 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb45d247cb5d0eb602c1bcf5df01ab64 = $(`<div id="html_eb45d247cb5d0eb602c1bcf5df01ab64" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">KAUM Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Dr. Kusuma Atmaja No. 77-79, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Jawa<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_789be9a9e83c81dcdb299c3d50cde280.setContent(html_eb45d247cb5d0eb602c1bcf5df01ab64);
+            
+        
+
+        marker_b57ed7e85a60849eb7ecfe3bc7e0818d.bindPopup(popup_789be9a9e83c81dcdb299c3d50cde280)
+        ;
+
+        
+    
+    
+                marker_b57ed7e85a60849eb7ecfe3bc7e0818d.setIcon(icon_91c604bb559b5622e66b397ec3287012);
+            
+    
+            var marker_1f4002828f9263e6b33cb73c96fbbd5b = L.marker(
+                [-6.196107, 106.82364],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_48ab0f51dc7a8a69ec76b985130c9590 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49c6b733b5aa1132c7b607eb1a8a7eb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5a275f80d2ddbbd5a0919ccb9ef8609 = $(`<div id="html_b5a275f80d2ddbbd5a0919ccb9ef8609" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Li Feng - Mandarin Oriental, Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Mandarin Oriental, Jakarta, Jl. M. H. Thamrin, Thamrin, Jakarta 10310<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Chinese, Dimsum<br>       <b>Rating</b> : ⭐ 4.6<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_49c6b733b5aa1132c7b607eb1a8a7eb3.setContent(html_b5a275f80d2ddbbd5a0919ccb9ef8609);
+            
+        
+
+        marker_1f4002828f9263e6b33cb73c96fbbd5b.bindPopup(popup_49c6b733b5aa1132c7b607eb1a8a7eb3)
+        ;
+
+        
+    
+    
+                marker_1f4002828f9263e6b33cb73c96fbbd5b.setIcon(icon_48ab0f51dc7a8a69ec76b985130c9590);
+            
+    
+            var marker_3c9b7e667540f883b9c6e46c114e2cc6 = L.marker(
+                [-6.224291644, 106.8338167],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_9cf1ec7691572b803348e90cf91f23a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dffc3671aa732e73a83fedbd72356f9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd8aa282f960455c1bc0494bd69c003f = $(`<div id="html_cd8aa282f960455c1bc0494bd69c003f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Henshin - The Westin Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : The Westin Jakarta, Lantai 67-69, Jl. H. R. Rasuna Said, Kuningan, Jakarta 12940<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Peruvian, Japanese<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_dffc3671aa732e73a83fedbd72356f9a.setContent(html_cd8aa282f960455c1bc0494bd69c003f);
+            
+        
+
+        marker_3c9b7e667540f883b9c6e46c114e2cc6.bindPopup(popup_dffc3671aa732e73a83fedbd72356f9a)
+        ;
+
+        
+    
+    
+                marker_3c9b7e667540f883b9c6e46c114e2cc6.setIcon(icon_9cf1ec7691572b803348e90cf91f23a7);
+            
+    
+            var marker_8edd0ba790278d4c4c604631ed387b9f = L.marker(
+                [-6.224321641, 106.833693],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_3bd163a5a7199e70b6f8a3b7a10922fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_375be389051e1cc021a4af2f46105e22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c72f8d101727d8cb04bedf714485b34f = $(`<div id="html_c72f8d101727d8cb04bedf714485b34f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Seasonal Tastes - The Westin Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : The Westin Jakarta, Jl. H. R. Rasuna Said, Kuningan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian, Indian, Western<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_375be389051e1cc021a4af2f46105e22.setContent(html_c72f8d101727d8cb04bedf714485b34f);
+            
+        
+
+        marker_8edd0ba790278d4c4c604631ed387b9f.bindPopup(popup_375be389051e1cc021a4af2f46105e22)
+        ;
+
+        
+    
+    
+                marker_8edd0ba790278d4c4c604631ed387b9f.setIcon(icon_3bd163a5a7199e70b6f8a3b7a10922fa);
+            
+    
+            var marker_ca5c469dde0df59c5dbaff328350bd79 = L.marker(
+                [-6.196107, 106.82364],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_541b98203bb48cf3f64b23f7cd82dedb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96288fc8be7c4f146f56cb4e7812da22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd76ba39661cc49065c9c4d71397a059 = $(`<div id="html_bd76ba39661cc49065c9c4d71397a059" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Lyon - Mandarin Oriental, Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Mandarin Oriental, Jakarta, Jl. M. H. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : French<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_96288fc8be7c4f146f56cb4e7812da22.setContent(html_bd76ba39661cc49065c9c4d71397a059);
+            
+        
+
+        marker_ca5c469dde0df59c5dbaff328350bd79.bindPopup(popup_96288fc8be7c4f146f56cb4e7812da22)
+        ;
+
+        
+    
+    
+                marker_ca5c469dde0df59c5dbaff328350bd79.setIcon(icon_541b98203bb48cf3f64b23f7cd82dedb);
+            
+    
+            var marker_28d0da8e7eb0a8cd6c181ae86bb33906 = L.marker(
+                [-6.198954, 106.843099],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_55c54a95de5c71ac678b3cffdcb4fe1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa3037efba9f44549c62672f28a7cbed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cc8b45f2251f3f88325894d36ab5d28 = $(`<div id="html_2cc8b45f2251f3f88325894d36ab5d28" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">OPEN Restaurant - DoubleTree by Hilton Jakarta Diponegoro</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : DoubleTree by Hilton Jakarta - Diponegoro, Jl. Pegangsaan Timur No. 17, Cikini - Menteng, Jakarta Pusat  10310<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : European, Western, Asian<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_fa3037efba9f44549c62672f28a7cbed.setContent(html_2cc8b45f2251f3f88325894d36ab5d28);
+            
+        
+
+        marker_28d0da8e7eb0a8cd6c181ae86bb33906.bindPopup(popup_fa3037efba9f44549c62672f28a7cbed)
+        ;
+
+        
+    
+    
+                marker_28d0da8e7eb0a8cd6c181ae86bb33906.setIcon(icon_55c54a95de5c71ac678b3cffdcb4fe1f);
+            
+    
+            var marker_8cca44e067a6c8cb89281d15543f609d = L.marker(
+                [-6.188833, 106.833474],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_5674e71378f5fc75ec7dc4ec6d7e4712 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_669f1cd9d150483212e7b742e51d42d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc1c15954a84e887f84cb8cb41cb78d2 = $(`<div id="html_fc1c15954a84e887f84cb8cb41cb78d2" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Tugu Kunstkring Paleis</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Teuku Umar No. 1, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Betawi, Jawa, Western, Indonesian<br>       <b>Rating</b> : ⭐ 4.6<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_669f1cd9d150483212e7b742e51d42d0.setContent(html_fc1c15954a84e887f84cb8cb41cb78d2);
+            
+        
+
+        marker_8cca44e067a6c8cb89281d15543f609d.bindPopup(popup_669f1cd9d150483212e7b742e51d42d0)
+        ;
+
+        
+    
+    
+                marker_8cca44e067a6c8cb89281d15543f609d.setIcon(icon_5674e71378f5fc75ec7dc4ec6d7e4712);
+            
+    
+            var marker_493ac0b756dfab72d393bef532adade1 = L.marker(
+                [-6.191856, 106.824136],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_923da2a397c18d47b4435c77b252c7fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_230e4e0428982a6da07c4ef08cbb82a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_912bc80b68b67c927e7eb9eb980c21d8 = $(`<div id="html_912bc80b68b67c927e7eb9eb980c21d8" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Sudestada Grill, Bar & Cafe</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Irian No.18, Thamrin, Jakarta 10350<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Grill, South American<br>       <b>Rating</b> : ⭐ 4.6<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_230e4e0428982a6da07c4ef08cbb82a7.setContent(html_912bc80b68b67c927e7eb9eb980c21d8);
+            
+        
+
+        marker_493ac0b756dfab72d393bef532adade1.bindPopup(popup_230e4e0428982a6da07c4ef08cbb82a7)
+        ;
+
+        
+    
+    
+                marker_493ac0b756dfab72d393bef532adade1.setIcon(icon_923da2a397c18d47b4435c77b252c7fb);
+            
+    
+            var marker_b0ef66ae7850468a70d230ccffd9b832 = L.marker(
+                [-6.185416, 106.824023],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_c50c4761c338856974060d4445864911 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55b6b35e5a1279ec29e94a4eaa1f953a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34ca18083fe6031f10afb49000e8f4cb = $(`<div id="html_34ca18083fe6031f10afb49000e8f4cb" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">The Japanese - Sari Pacific Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Sari Pacific Hotel, Jl. M. H. Thamrin No. 6, Thamrin, Jakarta 10340<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Sushi, Ramen, Japanese<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_55b6b35e5a1279ec29e94a4eaa1f953a.setContent(html_34ca18083fe6031f10afb49000e8f4cb);
+            
+        
+
+        marker_b0ef66ae7850468a70d230ccffd9b832.bindPopup(popup_55b6b35e5a1279ec29e94a4eaa1f953a)
+        ;
+
+        
+    
+    
+                marker_b0ef66ae7850468a70d230ccffd9b832.setIcon(icon_c50c4761c338856974060d4445864911);
+            
+    
+            var marker_9ed481feecd0ee8d4a721911cd10e02e = L.marker(
+                [-6.198919, 106.839463],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_a5be514db67c150e35e7704eb98a455b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22b8d40e6d69e86073b21ff5d79a9deb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62c6fd4b8e802cdb17e6d5a8d1b8cfbc = $(`<div id="html_62c6fd4b8e802cdb17e6d5a8d1b8cfbc" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Giyanti Coffee Roastery</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Surabaya No. 20, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Coffee<br>       <b>Rating</b> : ⭐ 4.8<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_22b8d40e6d69e86073b21ff5d79a9deb.setContent(html_62c6fd4b8e802cdb17e6d5a8d1b8cfbc);
+            
+        
+
+        marker_9ed481feecd0ee8d4a721911cd10e02e.bindPopup(popup_22b8d40e6d69e86073b21ff5d79a9deb)
+        ;
+
+        
+    
+    
+                marker_9ed481feecd0ee8d4a721911cd10e02e.setIcon(icon_a5be514db67c150e35e7704eb98a455b);
+            
+    
+            var marker_2718e1c5e178639db1a73e896d0d6583 = L.marker(
+                [-6.224671272, 106.8240796],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_ed622d85f67baf6701a322faf7f15eec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb93bc08b269596ebf23784b0207d3bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51deb6606c8d0fed54849c7944506bf0 = $(`<div id="html_51deb6606c8d0fed54849c7944506bf0" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Arts Cafe - Raffles Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Raffles Jakarta, Jl. Prof. Dr. Satrio No. 3 - 5, Karet, Jakarta 12940<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western, Dimsum<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_eb93bc08b269596ebf23784b0207d3bf.setContent(html_51deb6606c8d0fed54849c7944506bf0);
+            
+        
+
+        marker_2718e1c5e178639db1a73e896d0d6583.bindPopup(popup_eb93bc08b269596ebf23784b0207d3bf)
+        ;
+
+        
+    
+    
+                marker_2718e1c5e178639db1a73e896d0d6583.setIcon(icon_ed622d85f67baf6701a322faf7f15eec);
+            
+    
+            var marker_e733d6c397a1dca865325c338082788e = L.marker(
+                [-6.191949, 106.828576],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_f70aa1466801a965425f81c43b228b00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c24ff7a6dd243fc3b8cf8e32ec4f0ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce87bbbf1ccb869ab4fe0fa6d6546135 = $(`<div id="html_ce87bbbf1ccb869ab4fe0fa6d6546135" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Plataran Menteng</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. H.O.S. Cokroaminoto No. 42, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_6c24ff7a6dd243fc3b8cf8e32ec4f0ce.setContent(html_ce87bbbf1ccb869ab4fe0fa6d6546135);
+            
+        
+
+        marker_e733d6c397a1dca865325c338082788e.bindPopup(popup_6c24ff7a6dd243fc3b8cf8e32ec4f0ce)
+        ;
+
+        
+    
+    
+                marker_e733d6c397a1dca865325c338082788e.setIcon(icon_f70aa1466801a965425f81c43b228b00);
+            
+    
+            var marker_43a2f837b48a3bb36a14d146b656004b = L.marker(
+                [-6.19828, 106.838072],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_d8a36b7dc38d7171bca8cb774ec3d3d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8a65444b75659b50646a350d1a8ae8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_948a24ac7e7117b8e5a4370c08499e6f = $(`<div id="html_948a24ac7e7117b8e5a4370c08499e6f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">La Vue Rooftop Bar - The Hermitage</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : The Hermitage, Lantai 9. Jl. Cilacap No. 1, Menteng, Jakarta 10310<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Finger Food, Western<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_f8a65444b75659b50646a350d1a8ae8c.setContent(html_948a24ac7e7117b8e5a4370c08499e6f);
+            
+        
+
+        marker_43a2f837b48a3bb36a14d146b656004b.bindPopup(popup_f8a65444b75659b50646a350d1a8ae8c)
+        ;
+
+        
+    
+    
+                marker_43a2f837b48a3bb36a14d146b656004b.setIcon(icon_d8a36b7dc38d7171bca8cb774ec3d3d3);
+            
+    
+            var marker_b3302fb604226f08f73f2fc75072c6e9 = L.marker(
+                [-6.197107, 106.837073],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_9dc59915540b1c869d03d1940bd2ff98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34a5c0f96a93bd9a68ebe24ddd1fe7b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9a6725ccf83e3c8251a67cbbeecb4f0 = $(`<div id="html_c9a6725ccf83e3c8251a67cbbeecb4f0" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Dope Burger & Co.</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Teuku Cik Ditiro No. 25, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Burger<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_34a5c0f96a93bd9a68ebe24ddd1fe7b4.setContent(html_c9a6725ccf83e3c8251a67cbbeecb4f0);
+            
+        
+
+        marker_b3302fb604226f08f73f2fc75072c6e9.bindPopup(popup_34a5c0f96a93bd9a68ebe24ddd1fe7b4)
+        ;
+
+        
+    
+    
+                marker_b3302fb604226f08f73f2fc75072c6e9.setIcon(icon_9dc59915540b1c869d03d1940bd2ff98);
+            
+    
+            var marker_4476f82383abe9e5dd79ab006ed3eb42 = L.marker(
+                [-6.197678, 106.839749],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_e86f8bccd5a734d4018bc2646041daaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c248946653f2b64bb2d98ebabc0b49b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4d07f9a7db23b77d5d2810051b08651 = $(`<div id="html_d4d07f9a7db23b77d5d2810051b08651" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Paradigma</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Pegangsaan Barat No. 4, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Coffee, Indonesian<br>       <b>Rating</b> : ⭐ 3.8<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_c248946653f2b64bb2d98ebabc0b49b1.setContent(html_d4d07f9a7db23b77d5d2810051b08651);
+            
+        
+
+        marker_4476f82383abe9e5dd79ab006ed3eb42.bindPopup(popup_c248946653f2b64bb2d98ebabc0b49b1)
+        ;
+
+        
+    
+    
+                marker_4476f82383abe9e5dd79ab006ed3eb42.setIcon(icon_e86f8bccd5a734d4018bc2646041daaa);
+            
+    
+            var marker_b44fcd5c025c3599810e8c4b7ae6df18 = L.marker(
+                [-6.122449, 106.843428],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_2a3ce88bc4b77e4d2c309db7b5fd9da4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_493007a8ccbdd91332ff0b52ae0e7f9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a7b8ffa4ca97034a6c7e7c30378bf0d = $(`<div id="html_8a7b8ffa4ca97034a6c7e7c30378bf0d" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Bandar Djakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Taman Impian Jaya Ancol, Jl. Lodan Timur, Ancol, Jakarta 14430<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Seafood<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_493007a8ccbdd91332ff0b52ae0e7f9f.setContent(html_8a7b8ffa4ca97034a6c7e7c30378bf0d);
+            
+        
+
+        marker_b44fcd5c025c3599810e8c4b7ae6df18.bindPopup(popup_493007a8ccbdd91332ff0b52ae0e7f9f)
+        ;
+
+        
+    
+    
+                marker_b44fcd5c025c3599810e8c4b7ae6df18.setIcon(icon_2a3ce88bc4b77e4d2c309db7b5fd9da4);
+            
+    
+            var marker_2976f34c54602c6ffe2da43a0ff19f42 = L.marker(
+                [-6.196107, 106.82364],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_4cba1578b706a2e96dda5eb55b3aebab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_387ad4ae3c5c2b55549231e9ef5f9606 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0543aed04c343de6a72f4113a3b02383 = $(`<div id="html_0543aed04c343de6a72f4113a3b02383" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Cinnamon - Mandarin Oriental, Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Mandarin Oriental, Jakarta, Jl. M. H. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Asian, Western<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_387ad4ae3c5c2b55549231e9ef5f9606.setContent(html_0543aed04c343de6a72f4113a3b02383);
+            
+        
+
+        marker_2976f34c54602c6ffe2da43a0ff19f42.bindPopup(popup_387ad4ae3c5c2b55549231e9ef5f9606)
+        ;
+
+        
+    
+    
+                marker_2976f34c54602c6ffe2da43a0ff19f42.setIcon(icon_4cba1578b706a2e96dda5eb55b3aebab);
+            
+    
+            var marker_f4a1aa0b1d419c4c1514f5b582605be4 = L.marker(
+                [-6.1985, 106.837354],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_e9fb311b7c9e9d77646689223e4cee14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dd7fc11a12bec35d145e5dfbe4b87ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1ce0702b09afd53e84ddd25f3d38e2f = $(`<div id="html_f1ce0702b09afd53e84ddd25f3d38e2f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Bunga Rampai</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Teuku Cik Ditiro No. 35, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_5dd7fc11a12bec35d145e5dfbe4b87ce.setContent(html_f1ce0702b09afd53e84ddd25f3d38e2f);
+            
+        
+
+        marker_f4a1aa0b1d419c4c1514f5b582605be4.bindPopup(popup_5dd7fc11a12bec35d145e5dfbe4b87ce)
+        ;
+
+        
+    
+    
+                marker_f4a1aa0b1d419c4c1514f5b582605be4.setIcon(icon_e9fb311b7c9e9d77646689223e4cee14);
+            
+    
+            var marker_c4e0d3e43f213e29424289f7ed2252cc = L.marker(
+                [-6.203053691, 106.8187926],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_5dea5b68db51d471f7356d8eb5c90b49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d29c47fdde4400e8f8dbbcb77af0c580 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_941a8adcb19b91a745e359009c58ca8d = $(`<div id="html_941a8adcb19b91a745e359009c58ca8d" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Satoo - Shangri-La Hotel</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Shangri-La Hotel, Jl. Jendral Sudirman Kav. 1, Sudirman, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian, Western<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_d29c47fdde4400e8f8dbbcb77af0c580.setContent(html_941a8adcb19b91a745e359009c58ca8d);
+            
+        
+
+        marker_c4e0d3e43f213e29424289f7ed2252cc.bindPopup(popup_d29c47fdde4400e8f8dbbcb77af0c580)
+        ;
+
+        
+    
+    
+                marker_c4e0d3e43f213e29424289f7ed2252cc.setIcon(icon_5dea5b68db51d471f7356d8eb5c90b49);
+            
+    
+            var marker_e37c0d3337feb4a564237adaea86b336 = L.marker(
+                [-6.170174992, 106.8298839],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_6da4b8de25418b1b2d3080a2b6c5d055 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_350d7bbb435f8d91ebc6173a652fca63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07ddf6f49d73887a9c0ca738719725aa = $(`<div id="html_07ddf6f49d73887a9c0ca738719725aa" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Ragusa Es Italia</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Veteran I No. 10, Gambir, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Ice Cream, Desserts<br>       <b>Rating</b> : ⭐ 3.3<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_350d7bbb435f8d91ebc6173a652fca63.setContent(html_07ddf6f49d73887a9c0ca738719725aa);
+            
+        
+
+        marker_e37c0d3337feb4a564237adaea86b336.bindPopup(popup_350d7bbb435f8d91ebc6173a652fca63)
+        ;
+
+        
+    
+    
+                marker_e37c0d3337feb4a564237adaea86b336.setIcon(icon_6da4b8de25418b1b2d3080a2b6c5d055);
+            
+    
+            var marker_2ceace049fd90fe69faec79e627c5977 = L.marker(
+                [-6.221911212, 106.7986429],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_2fd9c764b02308d5741d538954484843 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d121618466df4b5059f2830979a84a5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd2d6c0cf3c06b7704170d8c40c26416 = $(`<div id="html_fd2d6c0cf3c06b7704170d8c40c26416" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Spectrum - Fairmont Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Fairmont Jakarta, Jl. Asia Afrika No. 8, Senayan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_d121618466df4b5059f2830979a84a5d.setContent(html_fd2d6c0cf3c06b7704170d8c40c26416);
+            
+        
+
+        marker_2ceace049fd90fe69faec79e627c5977.bindPopup(popup_d121618466df4b5059f2830979a84a5d)
+        ;
+
+        
+    
+    
+                marker_2ceace049fd90fe69faec79e627c5977.setIcon(icon_2fd9c764b02308d5741d538954484843);
+            
+    
+            var marker_a6b260c3e8c013f35b49611469b99e90 = L.marker(
+                [-6.239971, 106.782625],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_3b5492b4e26ce64e87988b6d00060786 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3fff52d7c1440f895ce447d0e78bcf5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f3b099b582f20ec502548f46086f9c4 = $(`<div id="html_8f3b099b582f20ec502548f46086f9c4" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Tanpopo Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Sultan Iskandar Muda No. 99E, Gandaria, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_e3fff52d7c1440f895ce447d0e78bcf5.setContent(html_8f3b099b582f20ec502548f46086f9c4);
+            
+        
+
+        marker_a6b260c3e8c013f35b49611469b99e90.bindPopup(popup_e3fff52d7c1440f895ce447d0e78bcf5)
+        ;
+
+        
+    
+    
+                marker_a6b260c3e8c013f35b49611469b99e90.setIcon(icon_3b5492b4e26ce64e87988b6d00060786);
+            
+    
+            var marker_d07e1caa5aa4ef17a0da4225e3562db4 = L.marker(
+                [-6.187192, 106.831999],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_ff6d1b2d238fd540ef0d10df6b31fd61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3076d77a34cffc3472f38c50fd65f5d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0292a4813f87e7484cdfdd6b54ccbdca = $(`<div id="html_0292a4813f87e7484cdfdd6b54ccbdca" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Al Jazeerah Signature</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Johar No. 8, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Arabian, Middle Eastern<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_3076d77a34cffc3472f38c50fd65f5d4.setContent(html_0292a4813f87e7484cdfdd6b54ccbdca);
+            
+        
+
+        marker_d07e1caa5aa4ef17a0da4225e3562db4.bindPopup(popup_3076d77a34cffc3472f38c50fd65f5d4)
+        ;
+
+        
+    
+    
+                marker_d07e1caa5aa4ef17a0da4225e3562db4.setIcon(icon_ff6d1b2d238fd540ef0d10df6b31fd61);
+            
+    
+            var marker_19b3a409b2ae8b4b1b6a92211200597e = L.marker(
+                [-6.193312, 106.837774],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_dd33055282102c52f25decfcca943085 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a5a66b3f99c7cf310d59c9df2efd97a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6a9a56ecbbe303253e63e7618f8d7d7 = $(`<div id="html_d6a9a56ecbbe303253e63e7618f8d7d7" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Kikugawa</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Cikini 4 No. 13, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese, Sushi<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_4a5a66b3f99c7cf310d59c9df2efd97a.setContent(html_d6a9a56ecbbe303253e63e7618f8d7d7);
+            
+        
+
+        marker_19b3a409b2ae8b4b1b6a92211200597e.bindPopup(popup_4a5a66b3f99c7cf310d59c9df2efd97a)
+        ;
+
+        
+    
+    
+                marker_19b3a409b2ae8b4b1b6a92211200597e.setIcon(icon_dd33055282102c52f25decfcca943085);
+            
+    
+            var marker_ed402bfd78f416e011881eb64b49c947 = L.marker(
+                [-6.201115, 106.8223],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_08ed0291354db11bb8b19d9c3c781aab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ce0485b1204abab9c3a3295cd03e40a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a10fc8841d81ffd91c75639627489ab = $(`<div id="html_2a10fc8841d81ffd91c75639627489ab" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">WAKI Japanese BBQ Dining</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Lantai 1, Jl. Tanjung Karang No. 5, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese, BBQ<br>       <b>Rating</b> : ⭐ 4.9<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_0ce0485b1204abab9c3a3295cd03e40a.setContent(html_2a10fc8841d81ffd91c75639627489ab);
+            
+        
+
+        marker_ed402bfd78f416e011881eb64b49c947.bindPopup(popup_0ce0485b1204abab9c3a3295cd03e40a)
+        ;
+
+        
+    
+    
+                marker_ed402bfd78f416e011881eb64b49c947.setIcon(icon_08ed0291354db11bb8b19d9c3c781aab);
+            
+    
+            var marker_d59852791564a800747b08c608397b2d = L.marker(
+                [-6.196728, 106.822581],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_a3bf248ef6b08f98376fd159d0432fe6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d0ed5dc198734b17acb572aa941c93d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20b6b9f78a8faa42cea1d4a694599211 = $(`<div id="html_20b6b9f78a8faa42cea1d4a694599211" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">SKYE</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Menara BCA, Lantai 56, Jl. MH. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Fusion, European, Asian<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_1d0ed5dc198734b17acb572aa941c93d.setContent(html_20b6b9f78a8faa42cea1d4a694599211);
+            
+        
+
+        marker_d59852791564a800747b08c608397b2d.bindPopup(popup_1d0ed5dc198734b17acb572aa941c93d)
+        ;
+
+        
+    
+    
+                marker_d59852791564a800747b08c608397b2d.setIcon(icon_a3bf248ef6b08f98376fd159d0432fe6);
+            
+    
+            var marker_73959a5649de2ba266de9e4386a9e408 = L.marker(
+                [-6.196251, 106.822047],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_40240d12339bffba1570a31a6423ffef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53ac01d93ea021dcd1957eb514c7ec2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b95d99bea2364d52b447bf63a78335c = $(`<div id="html_0b95d99bea2364d52b447bf63a78335c" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Union Deli</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, East Mall, Lantai Ground, Jl. M. H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western<br>       <b>Rating</b> : ⭐ 4.6<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_53ac01d93ea021dcd1957eb514c7ec2b.setContent(html_0b95d99bea2364d52b447bf63a78335c);
+            
+        
+
+        marker_73959a5649de2ba266de9e4386a9e408.bindPopup(popup_53ac01d93ea021dcd1957eb514c7ec2b)
+        ;
+
+        
+    
+    
+                marker_73959a5649de2ba266de9e4386a9e408.setIcon(icon_40240d12339bffba1570a31a6423ffef);
+            
+    
+            var marker_d18348be342c9d048dd042dc5cf63018 = L.marker(
+                [-6.177807616, 106.7887911],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_153a888d9b0d937a3a1d0fa3ccb62680 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1aee7e88aa34d3dc323ae661510c212c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d194aecbd0cf1dc86f39ba3fb03fccf7 = $(`<div id="html_d194aecbd0cf1dc86f39ba3fb03fccf7" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Collage - Hotel Pullman Jakarta Central Park</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Pullman Jakarta Central Park, Jl. Letjen S. Parman, Tanjung Duren, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Asian, Western<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_1aee7e88aa34d3dc323ae661510c212c.setContent(html_d194aecbd0cf1dc86f39ba3fb03fccf7);
+            
+        
+
+        marker_d18348be342c9d048dd042dc5cf63018.bindPopup(popup_1aee7e88aa34d3dc323ae661510c212c)
+        ;
+
+        
+    
+    
+                marker_d18348be342c9d048dd042dc5cf63018.setIcon(icon_153a888d9b0d937a3a1d0fa3ccb62680);
+            
+    
+            var marker_1150337d11baeba0941ae681ddd512be = L.marker(
+                [-6.222134524, 106.7987321],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_9cec901d178256e5c7c283daeaaab9d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca31d6ac783e1d193c3d2552ce531dbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0a94e081f10e2ae7ee7439260ccfb25 = $(`<div id="html_a0a94e081f10e2ae7ee7439260ccfb25" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Peacock Lounge - Fairmont Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Fairmont Jakarta, Jl. Asia Afrika No. 8, Senayan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_ca31d6ac783e1d193c3d2552ce531dbf.setContent(html_a0a94e081f10e2ae7ee7439260ccfb25);
+            
+        
+
+        marker_1150337d11baeba0941ae681ddd512be.bindPopup(popup_ca31d6ac783e1d193c3d2552ce531dbf)
+        ;
+
+        
+    
+    
+                marker_1150337d11baeba0941ae681ddd512be.setIcon(icon_9cec901d178256e5c7c283daeaaab9d6);
+            
+    
+            var marker_ce82f637bbd7731a93e5f05c40d1253e = L.marker(
+                [-6.187742, 106.836843],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_a78dd6b8472c63d1d646c5e78ee3d5a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a76269da7b19c3f104f2c029e0c521f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2986ded575558ddd80d176ef3b54a3be = $(`<div id="html_2986ded575558ddd80d176ef3b54a3be" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Tjikini</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Cikini No. 17, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Coffee, Indonesian<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_8a76269da7b19c3f104f2c029e0c521f.setContent(html_2986ded575558ddd80d176ef3b54a3be);
+            
+        
+
+        marker_ce82f637bbd7731a93e5f05c40d1253e.bindPopup(popup_8a76269da7b19c3f104f2c029e0c521f)
+        ;
+
+        
+    
+    
+                marker_ce82f637bbd7731a93e5f05c40d1253e.setIcon(icon_a78dd6b8472c63d1d646c5e78ee3d5a8);
+            
+    
+            var marker_902669513bbcadd3ccb065d67b1b6abe = L.marker(
+                [-6.197621, 106.836639],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_5e7b6768528d9d79475a5cc744736aec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40ba3062694cdb6f68ba0f86837f1227 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06295ae365d342e15667c13743b89021 = $(`<div id="html_06295ae365d342e15667c13743b89021" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Gelato Secrets</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Shophaus, Lantai 1, Jl. Teuku Cik Ditiro No. 36, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Ice Cream<br>       <b>Rating</b> : ⭐ 4.6<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_40ba3062694cdb6f68ba0f86837f1227.setContent(html_06295ae365d342e15667c13743b89021);
+            
+        
+
+        marker_902669513bbcadd3ccb065d67b1b6abe.bindPopup(popup_40ba3062694cdb6f68ba0f86837f1227)
+        ;
+
+        
+    
+    
+                marker_902669513bbcadd3ccb065d67b1b6abe.setIcon(icon_5e7b6768528d9d79475a5cc744736aec);
+            
+    
+            var marker_2dbc0ff632a39a34a04212ca627ba548 = L.marker(
+                [-6.183647, 106.820749],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_8d72ee24993897df06c9824e45937c3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40e95d611041880efeb9ddf28e750fe3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14f965ef1eb1d619e48f870c9dd6d40a = $(`<div id="html_14f965ef1eb1d619e48f870c9dd6d40a" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Langit Seduh - Takes Mansion & Hotel</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Takes Mansion & Hotel, Lantai 11, Jl. Taman Kebon Sirih 1 No. 3-4, Tanah Abang, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Coffee, Indonesian, Snacks<br>       <b>Rating</b> : ⭐ 3.6<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_40e95d611041880efeb9ddf28e750fe3.setContent(html_14f965ef1eb1d619e48f870c9dd6d40a);
+            
+        
+
+        marker_2dbc0ff632a39a34a04212ca627ba548.bindPopup(popup_40e95d611041880efeb9ddf28e750fe3)
+        ;
+
+        
+    
+    
+                marker_2dbc0ff632a39a34a04212ca627ba548.setIcon(icon_8d72ee24993897df06c9824e45937c3e);
+            
+    
+            var marker_99d842fba4a242ae94dd88841e8bb7cd = L.marker(
+                [-6.208442671, 106.8178089],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_be9442ee8c98d6389ff7960bc6353fd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1186f4befa678da0bea8701e52c78dbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b80c5bd9cb7a301f2975c2c8268cae0 = $(`<div id="html_2b80c5bd9cb7a301f2975c2c8268cae0" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Hokkaido Izakaya</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Pavilion Retail Arcade, Lantai Dasar, Jl. K.H. Mas Mansyur Kav. 24, Sudirman, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese, Sushi<br>       <b>Rating</b> : ⭐ 4.7<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_1186f4befa678da0bea8701e52c78dbb.setContent(html_2b80c5bd9cb7a301f2975c2c8268cae0);
+            
+        
+
+        marker_99d842fba4a242ae94dd88841e8bb7cd.bindPopup(popup_1186f4befa678da0bea8701e52c78dbb)
+        ;
+
+        
+    
+    
+                marker_99d842fba4a242ae94dd88841e8bb7cd.setIcon(icon_be9442ee8c98d6389ff7960bc6353fd8);
+            
+    
+            var marker_ded94752f0f4f7b5a7ff39167e9d2071 = L.marker(
+                [-6.194244, 106.836576],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_44e8247fb01d9260bcdb68709f11f8ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76b28c1b90d2e30af4d61fd332360d88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fd75a333e891ac14503efe63178664a = $(`<div id="html_8fd75a333e891ac14503efe63178664a" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">HERITAGE by Tan Goei</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Teuku Cik Ditiro No. 3, Menteng, Jakarta 10350<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Belanda, Indonesian<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_76b28c1b90d2e30af4d61fd332360d88.setContent(html_8fd75a333e891ac14503efe63178664a);
+            
+        
+
+        marker_ded94752f0f4f7b5a7ff39167e9d2071.bindPopup(popup_76b28c1b90d2e30af4d61fd332360d88)
+        ;
+
+        
+    
+    
+                marker_ded94752f0f4f7b5a7ff39167e9d2071.setIcon(icon_44e8247fb01d9260bcdb68709f11f8ca);
+            
+    
+            var marker_44e65436cd8fb21d2711101556798c15 = L.marker(
+                [-6.197896, 106.82872],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_889301eb2241b171c5ddd42737cc29e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_056d15a19d39a9b20195fa3663ec00d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_467f5b87e8671046d57f15668e5e58cd = $(`<div id="html_467f5b87e8671046d57f15668e5e58cd" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Por Que No</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : De Ritz Building, Lantai 5, Jl. HOS. Cokroaminoto No. 91, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Spanish<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_056d15a19d39a9b20195fa3663ec00d1.setContent(html_467f5b87e8671046d57f15668e5e58cd);
+            
+        
+
+        marker_44e65436cd8fb21d2711101556798c15.bindPopup(popup_056d15a19d39a9b20195fa3663ec00d1)
+        ;
+
+        
+    
+    
+                marker_44e65436cd8fb21d2711101556798c15.setIcon(icon_889301eb2241b171c5ddd42737cc29e7);
+            
+    
+            var marker_0fa1577053a6c8188e52b632b82b84f3 = L.marker(
+                [-6.197947, 106.828593],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_344a263320ab60220a67af3107f01786 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fe7e5541f02acaf17b0a740330c3c13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd2a2c8cf327ed2ad97f011fca09c346 = $(`<div id="html_dd2a2c8cf327ed2ad97f011fca09c346" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Maple & Oak</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : De Ritz Building, Lantai Ground, Jl. HOS. Cokroaminoto No. 91, Menteng, Jakarta 10310<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_8fe7e5541f02acaf17b0a740330c3c13.setContent(html_dd2a2c8cf327ed2ad97f011fca09c346);
+            
+        
+
+        marker_0fa1577053a6c8188e52b632b82b84f3.bindPopup(popup_8fe7e5541f02acaf17b0a740330c3c13)
+        ;
+
+        
+    
+    
+                marker_0fa1577053a6c8188e52b632b82b84f3.setIcon(icon_344a263320ab60220a67af3107f01786);
+            
+    
+            var marker_ec0fd7bc062a6e2b51108d1d2dde82f8 = L.marker(
+                [-6.195618, 106.822356],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_6b3b603be73a95112c824903af3de52f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe57784451624589728211ce89350646 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f56f8cca9083cf1256d1a62c1800427 = $(`<div id="html_0f56f8cca9083cf1256d1a62c1800427" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">OKU - Hotel Indonesia Kempinski</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Indonesia Kempinski, Jl. M. H. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese, Sushi<br>       <b>Rating</b> : ⭐ 4.9<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_fe57784451624589728211ce89350646.setContent(html_0f56f8cca9083cf1256d1a62c1800427);
+            
+        
+
+        marker_ec0fd7bc062a6e2b51108d1d2dde82f8.bindPopup(popup_fe57784451624589728211ce89350646)
+        ;
+
+        
+    
+    
+                marker_ec0fd7bc062a6e2b51108d1d2dde82f8.setIcon(icon_6b3b603be73a95112c824903af3de52f);
+            
+    
+            var marker_1a8bb293414c55e434b6a29c9b7e3d6f = L.marker(
+                [-6.20016, 106.843646],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_56534f6cff9f7b79acf32bbcdb77ada1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6c8f7dec1be1d380e4d20b4a1dbcc08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be4b87aa24be10b40f525d35227ac815 = $(`<div id="html_be4b87aa24be10b40f525d35227ac815" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Hello Sunday</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Metropole 21 Lantai 2, Jl. Pegangsaan Timur No. 21, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Italian, Asian, Desserts, Coffee<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_a6c8f7dec1be1d380e4d20b4a1dbcc08.setContent(html_be4b87aa24be10b40f525d35227ac815);
+            
+        
+
+        marker_1a8bb293414c55e434b6a29c9b7e3d6f.bindPopup(popup_a6c8f7dec1be1d380e4d20b4a1dbcc08)
+        ;
+
+        
+    
+    
+                marker_1a8bb293414c55e434b6a29c9b7e3d6f.setIcon(icon_56534f6cff9f7b79acf32bbcdb77ada1);
+            
+    
+            var marker_843b7ed1d09bae7795e75426f1b19eb9 = L.marker(
+                [-6.187623, 106.830838],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_44ff0473557e6f776549059a81cd065f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b546b9c3e4df3a03d51270488d60af03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49cba77f4ac6535b5f35df417cb919ea = $(`<div id="html_49cba77f4ac6535b5f35df417cb919ea" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Ya-Udah Bistro</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Johar No. 15, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : European, Asian<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_b546b9c3e4df3a03d51270488d60af03.setContent(html_49cba77f4ac6535b5f35df417cb919ea);
+            
+        
+
+        marker_843b7ed1d09bae7795e75426f1b19eb9.bindPopup(popup_b546b9c3e4df3a03d51270488d60af03)
+        ;
+
+        
+    
+    
+                marker_843b7ed1d09bae7795e75426f1b19eb9.setIcon(icon_44ff0473557e6f776549059a81cd065f);
+            
+    
+            var marker_4f7efd1ede224e01a86f9e0d98a48779 = L.marker(
+                [-6.189801994, 106.83715],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_beeae3ba4782fee21d9296d968fb31da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1367ebcfd91dbbb0f3adccfd2417c051 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_482635936de9d6cc1bef5fcb2366f7dd = $(`<div id="html_482635936de9d6cc1bef5fcb2366f7dd" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Tjikinii Lima</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Cikini I No. 5, Cikini, Jakarta 10330<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western, Indonesian<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_1367ebcfd91dbbb0f3adccfd2417c051.setContent(html_482635936de9d6cc1bef5fcb2366f7dd);
+            
+        
+
+        marker_4f7efd1ede224e01a86f9e0d98a48779.bindPopup(popup_1367ebcfd91dbbb0f3adccfd2417c051)
+        ;
+
+        
+    
+    
+                marker_4f7efd1ede224e01a86f9e0d98a48779.setIcon(icon_beeae3ba4782fee21d9296d968fb31da);
+            
+    
+            var marker_c44bdce7b06a9aa9bca96a027ed17cb3 = L.marker(
+                [-6.208164357, 106.8284543],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_6df4e15a84619ec25ce841e6f6078830 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_878ce062ee28ad4c674359c8f0d9c333 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f07b9fed7377ef14a833c56eb44a3e9 = $(`<div id="html_2f07b9fed7377ef14a833c56eb44a3e9" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Hause Rooftop</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : MD Place Bulding, Lantai 6, Jl. Setiabudi Selatan No. 7, Kuningan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western, Coffee, Tea<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_878ce062ee28ad4c674359c8f0d9c333.setContent(html_2f07b9fed7377ef14a833c56eb44a3e9);
+            
+        
+
+        marker_c44bdce7b06a9aa9bca96a027ed17cb3.bindPopup(popup_878ce062ee28ad4c674359c8f0d9c333)
+        ;
+
+        
+    
+    
+                marker_c44bdce7b06a9aa9bca96a027ed17cb3.setIcon(icon_6df4e15a84619ec25ce841e6f6078830);
+            
+    
+            var marker_ff541657a57dedf84c72f9e77a76c482 = L.marker(
+                [-6.217013994, 106.8184684],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_8f4cb5127b0838d042d9ffb92af3b51e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12d93a821e813e90c5800797438e7a5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dbae217a3eb5a28ae06c1b86093b9f78 = $(`<div id="html_dbae217a3eb5a28ae06c1b86093b9f78" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">GIA Restaurant & Bar</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Sampoerna Strategic Square, Lantai Ground, Jl. Jenderal Sudirman, Sudirman, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Italian<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_12d93a821e813e90c5800797438e7a5b.setContent(html_dbae217a3eb5a28ae06c1b86093b9f78);
+            
+        
+
+        marker_ff541657a57dedf84c72f9e77a76c482.bindPopup(popup_12d93a821e813e90c5800797438e7a5b)
+        ;
+
+        
+    
+    
+                marker_ff541657a57dedf84c72f9e77a76c482.setIcon(icon_8f4cb5127b0838d042d9ffb92af3b51e);
+            
+    
+            var marker_af5ee2f0c7f9a2d54dbe19fd7f7e476a = L.marker(
+                [-6.197503, 106.836698],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_876fc7fa07b00b3ee5289019908dc9b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bee4bb2ae23370dd53d783ff1f2006a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7069c71199b3a4c01feebd3e5a38f489 = $(`<div id="html_7069c71199b3a4c01feebd3e5a38f489" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">NAMELAKA</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Shophaus, Lantai 1, Jl. Teuku Cik Ditiro No. 36, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Bakery<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_6bee4bb2ae23370dd53d783ff1f2006a.setContent(html_7069c71199b3a4c01feebd3e5a38f489);
+            
+        
+
+        marker_af5ee2f0c7f9a2d54dbe19fd7f7e476a.bindPopup(popup_6bee4bb2ae23370dd53d783ff1f2006a)
+        ;
+
+        
+    
+    
+                marker_af5ee2f0c7f9a2d54dbe19fd7f7e476a.setIcon(icon_876fc7fa07b00b3ee5289019908dc9b9);
+            
+    
+            var marker_1ef5357cc4a509c959b5638ced229878 = L.marker(
+                [-6.183193, 106.825718],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_706a320aaa6ebd39d57f86803e1d1625 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c022da5f374175715740ef987292ae72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fe0ee44e57b6a5d61766c56746c55eb = $(`<div id="html_9fe0ee44e57b6a5d61766c56746c55eb" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Nasi Goreng Kambing Kebon Sirih 1958 (Nasgorkam Bonsir 1958)</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Kebon Sirih Barat, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Jawa<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_c022da5f374175715740ef987292ae72.setContent(html_9fe0ee44e57b6a5d61766c56746c55eb);
+            
+        
+
+        marker_1ef5357cc4a509c959b5638ced229878.bindPopup(popup_c022da5f374175715740ef987292ae72)
+        ;
+
+        
+    
+    
+                marker_1ef5357cc4a509c959b5638ced229878.setIcon(icon_706a320aaa6ebd39d57f86803e1d1625);
+            
+    
+            var marker_57342a0e595bfbd14cc161baebcce2ff = L.marker(
+                [-6.209062293, 106.8201471],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_f95a5638a42fdaff9668ea70afe031b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8b2bcdcd8235e8b186d4164d4d0a6f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec18f83ac1e6317230d717c7ecd8483f = $(`<div id="html_ec18f83ac1e6317230d717c7ecd8483f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Kado - AYANA Midplaza JAKARTA</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : AYANA Midplaza JAKARTA, Jl. Jend. Sudirman Kav. 10-11, Sudirman, Jakarta 10220<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_c8b2bcdcd8235e8b186d4164d4d0a6f9.setContent(html_ec18f83ac1e6317230d717c7ecd8483f);
+            
+        
+
+        marker_57342a0e595bfbd14cc161baebcce2ff.bindPopup(popup_c8b2bcdcd8235e8b186d4164d4d0a6f9)
+        ;
+
+        
+    
+    
+                marker_57342a0e595bfbd14cc161baebcce2ff.setIcon(icon_f95a5638a42fdaff9668ea70afe031b1);
+            
+    
+            var marker_e247ae6e9ddcfcb43613cc701e23b882 = L.marker(
+                [-6.244796, 106.783105],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_5c92f4f39bb89b1890565a449f0c2f5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_726a4474271c9cc6f58a66b03f7e3de3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e643a62b8b2d7683d147898e0bbb2a9 = $(`<div id="html_1e643a62b8b2d7683d147898e0bbb2a9" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Anigre - Sheraton Grand Jakarta Gandaria City Hotel</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Sheraton Grand Jakarta, Jl. Sultan Iskandar Muda, Gandaria, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western, Asian, Continental<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_726a4474271c9cc6f58a66b03f7e3de3.setContent(html_1e643a62b8b2d7683d147898e0bbb2a9);
+            
+        
+
+        marker_e247ae6e9ddcfcb43613cc701e23b882.bindPopup(popup_726a4474271c9cc6f58a66b03f7e3de3)
+        ;
+
+        
+    
+    
+                marker_e247ae6e9ddcfcb43613cc701e23b882.setIcon(icon_5c92f4f39bb89b1890565a449f0c2f5c);
+            
+    
+            var marker_94b59e65e866cba0e4da8797dd18ce9c = L.marker(
+                [-6.153882, 106.849133],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_2d2942d2f0016dc0869251814cf5f93e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a31ab5f78930ed3544bcd53240ef5e2a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d414478781b265b9248b9e83605193e = $(`<div id="html_8d414478781b265b9248b9e83605193e" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Catappa Restaurant - Grand Mercure Jakarta Kemayoran</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Mercure Jakarta Kemayoran, Superblok Mega Kemayoran, Jl. H. Benyamin Sueb Kav B-6, Gunung Sahari, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Italian, Western, Indonesian<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_a31ab5f78930ed3544bcd53240ef5e2a.setContent(html_8d414478781b265b9248b9e83605193e);
+            
+        
+
+        marker_94b59e65e866cba0e4da8797dd18ce9c.bindPopup(popup_a31ab5f78930ed3544bcd53240ef5e2a)
+        ;
+
+        
+    
+    
+                marker_94b59e65e866cba0e4da8797dd18ce9c.setIcon(icon_2d2942d2f0016dc0869251814cf5f93e);
+            
+    
+            var marker_ef8417c3147633aacebe968fe000f170 = L.marker(
+                [-6.192107, 106.828629],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_cf57cee2faccb8251183db8e531e6143 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7b15ff49d6c983875dfa7ef71addc6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05176d89d0288fb676331b8cc68fcda5 = $(`<div id="html_05176d89d0288fb676331b8cc68fcda5" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Exquise Patisserie</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Rumah Cokro, Jl. HOS Cokroaminoto No. 42A, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe, Bakery<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_d7b15ff49d6c983875dfa7ef71addc6b.setContent(html_05176d89d0288fb676331b8cc68fcda5);
+            
+        
+
+        marker_ef8417c3147633aacebe968fe000f170.bindPopup(popup_d7b15ff49d6c983875dfa7ef71addc6b)
+        ;
+
+        
+    
+    
+                marker_ef8417c3147633aacebe968fe000f170.setIcon(icon_cf57cee2faccb8251183db8e531e6143);
+            
+    
+            var marker_7fea68cd22a6f91bb37f15a5ac3d877a = L.marker(
+                [-6.196904, 106.822608],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_973d66b87b2564cc7b0f6ad9106a4685 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b232fd7a7cd371a97b2b484f25e3e9cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f626fc99b2bc0a2dcede7abe9bef2fa4 = $(`<div id="html_f626fc99b2bc0a2dcede7abe9bef2fa4" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Social House</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, East Mall, Lantai 1, Jl. M. H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Italian, Japanese<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_b232fd7a7cd371a97b2b484f25e3e9cb.setContent(html_f626fc99b2bc0a2dcede7abe9bef2fa4);
+            
+        
+
+        marker_7fea68cd22a6f91bb37f15a5ac3d877a.bindPopup(popup_b232fd7a7cd371a97b2b484f25e3e9cb)
+        ;
+
+        
+    
+    
+                marker_7fea68cd22a6f91bb37f15a5ac3d877a.setIcon(icon_973d66b87b2564cc7b0f6ad9106a4685);
+            
+    
+            var marker_7ba96e59cf982dfa301748b25b119a4c = L.marker(
+                [-6.19631, 106.822536],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_44fdfef38360a44338e84d5ca69080ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ab57f5a2d05b6be8ee377a1235c2d3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbf8d3a86de04a633d5b529d8d31c9fd = $(`<div id="html_cbf8d3a86de04a633d5b529d8d31c9fd" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Paulaner Brauhaus</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, East Mall, Lantai 2, Jl. M. H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : German<br>       <b>Rating</b> : ⭐ 4.6<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_1ab57f5a2d05b6be8ee377a1235c2d3f.setContent(html_cbf8d3a86de04a633d5b529d8d31c9fd);
+            
+        
+
+        marker_7ba96e59cf982dfa301748b25b119a4c.bindPopup(popup_1ab57f5a2d05b6be8ee377a1235c2d3f)
+        ;
+
+        
+    
+    
+                marker_7ba96e59cf982dfa301748b25b119a4c.setIcon(icon_44fdfef38360a44338e84d5ca69080ad);
+            
+    
+            var marker_b9aba238c23450a52aa7af7e1d6b9568 = L.marker(
+                [-6.183909, 106.824934],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_2b0175de617413f13aa1763459e1e6b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d095488df5f97c177b685f066db6dc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a958aff9b194183a348d55701355cfc4 = $(`<div id="html_a958aff9b194183a348d55701355cfc4" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Claypot Popo</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. H. Agus Salim No. 23A, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Chinese<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_0d095488df5f97c177b685f066db6dc3.setContent(html_a958aff9b194183a348d55701355cfc4);
+            
+        
+
+        marker_b9aba238c23450a52aa7af7e1d6b9568.bindPopup(popup_0d095488df5f97c177b685f066db6dc3)
+        ;
+
+        
+    
+    
+                marker_b9aba238c23450a52aa7af7e1d6b9568.setIcon(icon_2b0175de617413f13aa1763459e1e6b8);
+            
+    
+            var marker_a026805d3b082b0262dfb4bee0fcb39e = L.marker(
+                [-6.167420313, 106.8267618],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_7bc563ef294e61b9a5717d031df5e245 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c17bccfae329877b9c79176e0d69936f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_530558374c801f83be243225173b2989 = $(`<div id="html_530558374c801f83be243225173b2989" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Happy Day</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Ir. H. Juanda No 19, Gambir, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian, Western, Italian, Dimsum<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_c17bccfae329877b9c79176e0d69936f.setContent(html_530558374c801f83be243225173b2989);
+            
+        
+
+        marker_a026805d3b082b0262dfb4bee0fcb39e.bindPopup(popup_c17bccfae329877b9c79176e0d69936f)
+        ;
+
+        
+    
+    
+                marker_a026805d3b082b0262dfb4bee0fcb39e.setIcon(icon_7bc563ef294e61b9a5717d031df5e245);
+            
+    
+            var marker_a8ded7293918ef44b96de1b784d5a82e = L.marker(
+                [-6.195705, 106.820315],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_a3cf3d034aa095da96c27d025a85c0bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_772da7ca5e0bbea621a6dc04fd46d9e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_702f996925e7ed5bc1b77dc92f7de720 = $(`<div id="html_702f996925e7ed5bc1b77dc92f7de720" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Greyhound Cafe</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, West Mall, Lantai Ground, Jl. M.H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Fusion, Thai, European, Bakery, Beverages<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_772da7ca5e0bbea621a6dc04fd46d9e7.setContent(html_702f996925e7ed5bc1b77dc92f7de720);
+            
+        
+
+        marker_a8ded7293918ef44b96de1b784d5a82e.bindPopup(popup_772da7ca5e0bbea621a6dc04fd46d9e7)
+        ;
+
+        
+    
+    
+                marker_a8ded7293918ef44b96de1b784d5a82e.setIcon(icon_a3cf3d034aa095da96c27d025a85c0bb);
+            
+    
+            var marker_bb3af8f418b33f9463fce62b376b4bb4 = L.marker(
+                [-6.192977, 106.840186],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_a61f3e71dec7236cb2a6490b97bf7c98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a020481ffacc2a5010b10bd09ce52256 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7bd52755e21c49f0bb937703bf82268 = $(`<div id="html_a7bd52755e21c49f0bb937703bf82268" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Al-Jazeerah</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Raden Saleh No. 58, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Arabian<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_a020481ffacc2a5010b10bd09ce52256.setContent(html_a7bd52755e21c49f0bb937703bf82268);
+            
+        
+
+        marker_bb3af8f418b33f9463fce62b376b4bb4.bindPopup(popup_a020481ffacc2a5010b10bd09ce52256)
+        ;
+
+        
+    
+    
+                marker_bb3af8f418b33f9463fce62b376b4bb4.setIcon(icon_a61f3e71dec7236cb2a6490b97bf7c98);
+            
+    
+            var marker_a406bc1029a50ccb8aaa48c7892c030e = L.marker(
+                [-6.197606, 106.836593],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_9c42b1ede7b3b41451f5db7662bb3a4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7a13cc9af6cdafa68e6f7e0b699b098 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a827a775b7ebb650c14c4a24c6240c66 = $(`<div id="html_a827a775b7ebb650c14c4a24c6240c66" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Berrywell</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Shophaus, Lantai 1, Jl. Teuku Cik Ditiro No. 36, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Healthy Food<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_d7a13cc9af6cdafa68e6f7e0b699b098.setContent(html_a827a775b7ebb650c14c4a24c6240c66);
+            
+        
+
+        marker_a406bc1029a50ccb8aaa48c7892c030e.bindPopup(popup_d7a13cc9af6cdafa68e6f7e0b699b098)
+        ;
+
+        
+    
+    
+                marker_a406bc1029a50ccb8aaa48c7892c030e.setIcon(icon_9c42b1ede7b3b41451f5db7662bb3a4c);
+            
+    
+            var marker_4588467f1ec21339f93d031923791fdd = L.marker(
+                [-6.194439142, 106.8393249],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_77151dfe6e0b301c785cdec0baa70f7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0af5c7e718011b1468e1449ea05f9787 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50c447a307989268160f98d1ccfaeb5a = $(`<div id="html_50c447a307989268160f98d1ccfaeb5a" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">De'Langit Rooftop Bar - Mercure Jakarta Cikini</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Mercure Jakarta Cikini, Jl. Cikini Raya No. 66, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Finger Food<br>       <b>Rating</b> : ⭐ 3.3<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_0af5c7e718011b1468e1449ea05f9787.setContent(html_50c447a307989268160f98d1ccfaeb5a);
+            
+        
+
+        marker_4588467f1ec21339f93d031923791fdd.bindPopup(popup_0af5c7e718011b1468e1449ea05f9787)
+        ;
+
+        
+    
+    
+                marker_4588467f1ec21339f93d031923791fdd.setIcon(icon_77151dfe6e0b301c785cdec0baa70f7b);
+            
+    
+            var marker_3fc3527e81bcd7c9278d263e89edb15b = L.marker(
+                [-6.195506, 106.824828],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_3375b98703cade75198f0a0949a6ce25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd81def4c53091b057c30d68620c8a24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_041e4b81efdfe9b6a6aa0a500f348c0d = $(`<div id="html_041e4b81efdfe9b6a6aa0a500f348c0d" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Seribu Rasa</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Haji Agus Salim No. 128, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Seafood, Jawa, Peranakan<br>       <b>Rating</b> : ⭐ 4.6<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_bd81def4c53091b057c30d68620c8a24.setContent(html_041e4b81efdfe9b6a6aa0a500f348c0d);
+            
+        
+
+        marker_3fc3527e81bcd7c9278d263e89edb15b.bindPopup(popup_bd81def4c53091b057c30d68620c8a24)
+        ;
+
+        
+    
+    
+                marker_3fc3527e81bcd7c9278d263e89edb15b.setIcon(icon_3375b98703cade75198f0a0949a6ce25);
+            
+    
+            var marker_68bb7f226ad6480e85f1978f705a7bd8 = L.marker(
+                [-6.209289943, 106.8265938],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_1568022e0064898add56bc572e978e48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5861dfafb535ddfb0c64bb2a1962a835 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65bba5ea378a4fde55082eef092993f8 = $(`<div id="html_65bba5ea378a4fde55082eef092993f8" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Warung MJS</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Setiabudi Tengah No.11, Setiabudi, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Jawa, Indonesian<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_5861dfafb535ddfb0c64bb2a1962a835.setContent(html_65bba5ea378a4fde55082eef092993f8);
+            
+        
+
+        marker_68bb7f226ad6480e85f1978f705a7bd8.bindPopup(popup_5861dfafb535ddfb0c64bb2a1962a835)
+        ;
+
+        
+    
+    
+                marker_68bb7f226ad6480e85f1978f705a7bd8.setIcon(icon_1568022e0064898add56bc572e978e48);
+            
+    
+            var marker_1481387001ba66b976e9c4b9316bd42b = L.marker(
+                [-6.209137621, 106.8184657],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_36a0b91ae24fb7facaf88b231cc66aee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ef875fb9759b8bce473021849186a94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_edc4b6b7f4c0b4ca42d82dc4278ed48c = $(`<div id="html_edc4b6b7f4c0b4ca42d82dc4278ed48c" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Gyu - Kaku Japanese BBQ</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Citywalk Sudirman, Lantai 1, Jl. KH Mas Mansyur, Sudirman, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese, BBQ<br>       <b>Rating</b> : ⭐ 4.7<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_8ef875fb9759b8bce473021849186a94.setContent(html_edc4b6b7f4c0b4ca42d82dc4278ed48c);
+            
+        
+
+        marker_1481387001ba66b976e9c4b9316bd42b.bindPopup(popup_8ef875fb9759b8bce473021849186a94)
+        ;
+
+        
+    
+    
+                marker_1481387001ba66b976e9c4b9316bd42b.setIcon(icon_36a0b91ae24fb7facaf88b231cc66aee);
+            
+    
+            var marker_7437316ba32f8548c45e95564066eb17 = L.marker(
+                [-6.184186, 106.830247],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_4b78dde25b79e2cbff7599ec59993394 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21b469392de141518bce1a4d5d2daeeb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_195cf72299353326ef5e326e6ccf1094 = $(`<div id="html_195cf72299353326ef5e326e6ccf1094" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Melly's Garden</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Kebon Sirih Timur Dalam No. 37 - 39, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Jawa, Indonesian, Western<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_21b469392de141518bce1a4d5d2daeeb.setContent(html_195cf72299353326ef5e326e6ccf1094);
+            
+        
+
+        marker_7437316ba32f8548c45e95564066eb17.bindPopup(popup_21b469392de141518bce1a4d5d2daeeb)
+        ;
+
+        
+    
+    
+                marker_7437316ba32f8548c45e95564066eb17.setIcon(icon_4b78dde25b79e2cbff7599ec59993394);
+            
+    
+            var marker_e004ca4078b8bf5958962ed0f521433a = L.marker(
+                [-6.194063, 106.822333],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_ed4eac62b1000f1cee4c8f16edffde61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73aae0e91f455bbd769031e142b12f61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8cd23fcd8bd1b9de5fdf8825a2cae76b = $(`<div id="html_8cd23fcd8bd1b9de5fdf8825a2cae76b" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Imperial Shanghai Lamian Xiao Long Bao</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Plaza Indonesia, Lantai 1, Jl. M. H. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Chinese, Dimsum<br>       <b>Rating</b> : ⭐ 4.7<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_73aae0e91f455bbd769031e142b12f61.setContent(html_8cd23fcd8bd1b9de5fdf8825a2cae76b);
+            
+        
+
+        marker_e004ca4078b8bf5958962ed0f521433a.bindPopup(popup_73aae0e91f455bbd769031e142b12f61)
+        ;
+
+        
+    
+    
+                marker_e004ca4078b8bf5958962ed0f521433a.setIcon(icon_ed4eac62b1000f1cee4c8f16edffde61);
+            
+    
+            var marker_4149b0dd85e8bfc28b617e209a28b318 = L.marker(
+                [-6.197687, 106.824211],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_80b693f04245c70ee18030609b3fb885 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fca9911fea0f27b5050ed20859ff7c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d8d6e4f278f9cea83d4d3de41705dad = $(`<div id="html_3d8d6e4f278f9cea83d4d3de41705dad" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">1/15 Coffee</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Dr. Kusuma Atmaja No. 79, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_3fca9911fea0f27b5050ed20859ff7c8.setContent(html_3d8d6e4f278f9cea83d4d3de41705dad);
+            
+        
+
+        marker_4149b0dd85e8bfc28b617e209a28b318.bindPopup(popup_3fca9911fea0f27b5050ed20859ff7c8)
+        ;
+
+        
+    
+    
+                marker_4149b0dd85e8bfc28b617e209a28b318.setIcon(icon_80b693f04245c70ee18030609b3fb885);
+            
+    
+            var marker_72befb15187e60dc79175fc6ecfef61f = L.marker(
+                [-6.22066633, 106.8235579],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_3b858a967d7845f1c861146f52e05281 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b55d35b0ce04a9a78988a72924b2131c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9e9476a30a023093b4c6e8c616dc7b2 = $(`<div id="html_e9e9476a30a023093b4c6e8c616dc7b2" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Fillmore Coffee</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Suites@ Seven, Jl. H. Sidik No. 7, Setiabudi, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_b55d35b0ce04a9a78988a72924b2131c.setContent(html_e9e9476a30a023093b4c6e8c616dc7b2);
+            
+        
+
+        marker_72befb15187e60dc79175fc6ecfef61f.bindPopup(popup_b55d35b0ce04a9a78988a72924b2131c)
+        ;
+
+        
+    
+    
+                marker_72befb15187e60dc79175fc6ecfef61f.setIcon(icon_3b858a967d7845f1c861146f52e05281);
+            
+    
+            var marker_cc6638b7fc638f627b98084841d0a107 = L.marker(
+                [-6.199274, 106.837016],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_ce915fe44ee216b2c57a581e9e140708 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34e0de32c4169712dbc6a48a99060fa0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_294cefb8a5d555016324792f059ed644 = $(`<div id="html_294cefb8a5d555016324792f059ed644" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Spumante</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Teuku Cik Ditiro No. 50, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Italian<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_34e0de32c4169712dbc6a48a99060fa0.setContent(html_294cefb8a5d555016324792f059ed644);
+            
+        
+
+        marker_cc6638b7fc638f627b98084841d0a107.bindPopup(popup_34e0de32c4169712dbc6a48a99060fa0)
+        ;
+
+        
+    
+    
+                marker_cc6638b7fc638f627b98084841d0a107.setIcon(icon_ce915fe44ee216b2c57a581e9e140708);
+            
+    
+            var marker_383bb7eb1297d8491a5d9c48fb7845ac = L.marker(
+                [-6.228026587, 106.7974392],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_fe5049e0de0788117ec7dc645484c7f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08f119540fe796e47c641d0cf16b9b47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55963509d6cf1d40d64fe32f49a3c660 = $(`<div id="html_55963509d6cf1d40d64fe32f49a3c660" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Hakata Ikkousha</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Senayan City, Lantai Lower Ground, Jl. Asia Afrika, Senayan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese, Ramen<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_08f119540fe796e47c641d0cf16b9b47.setContent(html_55963509d6cf1d40d64fe32f49a3c660);
+            
+        
+
+        marker_383bb7eb1297d8491a5d9c48fb7845ac.bindPopup(popup_08f119540fe796e47c641d0cf16b9b47)
+        ;
+
+        
+    
+    
+                marker_383bb7eb1297d8491a5d9c48fb7845ac.setIcon(icon_fe5049e0de0788117ec7dc645484c7f2);
+            
+    
+            var marker_ed9ccfab30ee13a4defb4ae4fefdfe83 = L.marker(
+                [-6.222235514, 106.7986325],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_5d4a64fa5237bad36943400af1361ec3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6a6c7e2d5290e41cf31b33e5ce518a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_198eb49070ca283ffb55758181b6bad5 = $(`<div id="html_198eb49070ca283ffb55758181b6bad5" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">House of Yuen - Fairmont Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Fairmont Jakarta, Jl. Asia Afrika No. 8, Senayan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Chinese, Dimsum<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_f6a6c7e2d5290e41cf31b33e5ce518a0.setContent(html_198eb49070ca283ffb55758181b6bad5);
+            
+        
+
+        marker_ed9ccfab30ee13a4defb4ae4fefdfe83.bindPopup(popup_f6a6c7e2d5290e41cf31b33e5ce518a0)
+        ;
+
+        
+    
+    
+                marker_ed9ccfab30ee13a4defb4ae4fefdfe83.setIcon(icon_5d4a64fa5237bad36943400af1361ec3);
+            
+    
+            var marker_cacd6347d3d14d81008ae657e3b4f0ae = L.marker(
+                [-6.196082, 106.82212],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_ae9bd749014d53ce8058e497362fd656 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99763e50b81a30707128340525592f3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9305d297bd4f97e6d8241c5484361686 = $(`<div id="html_9305d297bd4f97e6d8241c5484361686" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Benedict</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, East Mall, Lantai Lower Ground, Jl. M. H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_99763e50b81a30707128340525592f3a.setContent(html_9305d297bd4f97e6d8241c5484361686);
+            
+        
+
+        marker_cacd6347d3d14d81008ae657e3b4f0ae.bindPopup(popup_99763e50b81a30707128340525592f3a)
+        ;
+
+        
+    
+    
+                marker_cacd6347d3d14d81008ae657e3b4f0ae.setIcon(icon_ae9bd749014d53ce8058e497362fd656);
+            
+    
+            var marker_b61902f6d8be966f61f699f94b4a1fc2 = L.marker(
+                [-6.207962038, 106.8177268],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_608bc282546da523bab0a5be26337638 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2b85dfe2127d714ced567b4aee4a7f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_860293fc5c78d3d49acdf2cfab4a9ac0 = $(`<div id="html_860293fc5c78d3d49acdf2cfab4a9ac0" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Tucano's Churrascaria - Brazilian BBQ & Buffet</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Pavilion Retail Arcade, Lantai Dasar,  Jl. K.H Mas Mansyur, Sudirman, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Steak, Grill, BBQ, South American<br>       <b>Rating</b> : ⭐ 4.7<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_b2b85dfe2127d714ced567b4aee4a7f3.setContent(html_860293fc5c78d3d49acdf2cfab4a9ac0);
+            
+        
+
+        marker_b61902f6d8be966f61f699f94b4a1fc2.bindPopup(popup_b2b85dfe2127d714ced567b4aee4a7f3)
+        ;
+
+        
+    
+    
+                marker_b61902f6d8be966f61f699f94b4a1fc2.setIcon(icon_608bc282546da523bab0a5be26337638);
+            
+    
+            var marker_10bd7bd3a4e05aaee80d1052be10f12a = L.marker(
+                [-6.193305, 106.823805],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_d57a3490a24195ba69a361c3479bf31b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f9876b4156def98b61fa49d50f42503 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a55e479ca53d1344b21b81bbd9ddf8ef = $(`<div id="html_a55e479ca53d1344b21b81bbd9ddf8ef" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Sushi Ichi - Pullman Jakarta Indonesia</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Pullman Jakarta Indonesia, Jl. M.H. Thamrin 59, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Sushi, Japanese<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_7f9876b4156def98b61fa49d50f42503.setContent(html_a55e479ca53d1344b21b81bbd9ddf8ef);
+            
+        
+
+        marker_10bd7bd3a4e05aaee80d1052be10f12a.bindPopup(popup_7f9876b4156def98b61fa49d50f42503)
+        ;
+
+        
+    
+    
+                marker_10bd7bd3a4e05aaee80d1052be10f12a.setIcon(icon_d57a3490a24195ba69a361c3479bf31b);
+            
+    
+            var marker_d7eb78906c7cfe01c1df90f5c13a5586 = L.marker(
+                [-6.201407, 106.822151],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_24cfc2acd0c4d8d581897a7f9e1b84f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94139a4146d7ec3722cdd1894a68caa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd3a75274093910765f5e4f73fa41ec3 = $(`<div id="html_cd3a75274093910765f5e4f73fa41ec3" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">SKYLOFT - All Seasons Hotel</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : All Seasons Hotel, Lantai 14, Jl. Talang Betutu No. 2, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian, Western<br>       <b>Rating</b> : ⭐ 3.9<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_94139a4146d7ec3722cdd1894a68caa2.setContent(html_cd3a75274093910765f5e4f73fa41ec3);
+            
+        
+
+        marker_d7eb78906c7cfe01c1df90f5c13a5586.bindPopup(popup_94139a4146d7ec3722cdd1894a68caa2)
+        ;
+
+        
+    
+    
+                marker_d7eb78906c7cfe01c1df90f5c13a5586.setIcon(icon_24cfc2acd0c4d8d581897a7f9e1b84f8);
+            
+    
+            var marker_9f5036391a13e670843c6d2dddfdc6e7 = L.marker(
+                [-6.195618, 106.822356],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_b37a909d27c0499a0332885ee7983741 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b8a3a8b99e707834393b6370cae54b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_487d1cb753075b1c26c02adcf476a5a7 = $(`<div id="html_487d1cb753075b1c26c02adcf476a5a7" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Signatures Restaurant - Hotel Indonesia Kempinski</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Indonesia Kempinski, Jl. M. H. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian, Western<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_1b8a3a8b99e707834393b6370cae54b5.setContent(html_487d1cb753075b1c26c02adcf476a5a7);
+            
+        
+
+        marker_9f5036391a13e670843c6d2dddfdc6e7.bindPopup(popup_1b8a3a8b99e707834393b6370cae54b5)
+        ;
+
+        
+    
+    
+                marker_9f5036391a13e670843c6d2dddfdc6e7.setIcon(icon_b37a909d27c0499a0332885ee7983741);
+            
+    
+            var marker_40ee32200be96daa8aa30d1f84b9ec09 = L.marker(
+                [-6.222012202, 106.7995542],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_d11cd9f6a82fcf1600a9f8f06f91506b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d6789729fd981b55bb54a2aafed4365 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1dd37a8b8bf595d06a4db6061f2dccc6 = $(`<div id="html_1dd37a8b8bf595d06a4db6061f2dccc6" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">View - Fairmont Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Fairmont Jakarta, Lantai 22, Jl. Asia Afrika No. 8, Senayan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_0d6789729fd981b55bb54a2aafed4365.setContent(html_1dd37a8b8bf595d06a4db6061f2dccc6);
+            
+        
+
+        marker_40ee32200be96daa8aa30d1f84b9ec09.bindPopup(popup_0d6789729fd981b55bb54a2aafed4365)
+        ;
+
+        
+    
+    
+                marker_40ee32200be96daa8aa30d1f84b9ec09.setIcon(icon_d11cd9f6a82fcf1600a9f8f06f91506b);
+            
+    
+            var marker_3c2b028cb95f3b898ba2a063af0fd2e1 = L.marker(
+                [-6.19484, 106.819567],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_c2cc364f9cc343cad7274811fc0bd231 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_499d203452e4905f706a593fd2cc666d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8428ecd6752e4575485f51b913d3761e = $(`<div id="html_8428ecd6752e4575485f51b913d3761e" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">The People's Cafe</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, West Mall, Lantai 5, Jl. M. H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Fusion, Italian, Indonesian, Coffee<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_499d203452e4905f706a593fd2cc666d.setContent(html_8428ecd6752e4575485f51b913d3761e);
+            
+        
+
+        marker_3c2b028cb95f3b898ba2a063af0fd2e1.bindPopup(popup_499d203452e4905f706a593fd2cc666d)
+        ;
+
+        
+    
+    
+                marker_3c2b028cb95f3b898ba2a063af0fd2e1.setIcon(icon_c2cc364f9cc343cad7274811fc0bd231);
+            
+    
+            var marker_1ccfa14925cdf584c04647c74969edd4 = L.marker(
+                [-6.195432, 106.821312],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_20d5865999c03e488ff86c5281363946 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17bef2a7a9727301a4dc8d59d14c0d7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_937fa809b5827eea7780eafec3bbdaa3 = $(`<div id="html_937fa809b5827eea7780eafec3bbdaa3" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Kimukatsu</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, East Mall, Lantai 3A, Jl. M. H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_17bef2a7a9727301a4dc8d59d14c0d7d.setContent(html_937fa809b5827eea7780eafec3bbdaa3);
+            
+        
+
+        marker_1ccfa14925cdf584c04647c74969edd4.bindPopup(popup_17bef2a7a9727301a4dc8d59d14c0d7d)
+        ;
+
+        
+    
+    
+                marker_1ccfa14925cdf584c04647c74969edd4.setIcon(icon_20d5865999c03e488ff86c5281363946);
+            
+    
+            var marker_b8655ea7fba98dd6f680ae84335202e9 = L.marker(
+                [-6.196643707, 106.8506201],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_eea7ed31bc31dd639ecbca2b29a66262 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30a26868b8f4b22ea902963de20afe67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0e3095acd9e6d532ee2ace25f40ee6c = $(`<div id="html_c0e3095acd9e6d532ee2ace25f40ee6c" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Watt Coffee</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : The Capitol Park, Jl. Salemba Raya No. 16, Senen, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe, Coffee, Tea<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_30a26868b8f4b22ea902963de20afe67.setContent(html_c0e3095acd9e6d532ee2ace25f40ee6c);
+            
+        
+
+        marker_b8655ea7fba98dd6f680ae84335202e9.bindPopup(popup_30a26868b8f4b22ea902963de20afe67)
+        ;
+
+        
+    
+    
+                marker_b8655ea7fba98dd6f680ae84335202e9.setIcon(icon_eea7ed31bc31dd639ecbca2b29a66262);
+            
+    
+            var marker_079e985f03e9092cf573ec339986beda = L.marker(
+                [-6.187535, 106.832479],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_6ac950b5b5b605ec7a15fafaa3bd6d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0290e8f83e7e755ccd006ac8a6094ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20b77db0121d3108556cd2b5aa43e6c7 = $(`<div id="html_20b77db0121d3108556cd2b5aa43e6c7" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Aromanis Restaurant</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Johar No. 1, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Indonesian<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_d0290e8f83e7e755ccd006ac8a6094ad.setContent(html_20b77db0121d3108556cd2b5aa43e6c7);
+            
+        
+
+        marker_079e985f03e9092cf573ec339986beda.bindPopup(popup_d0290e8f83e7e755ccd006ac8a6094ad)
+        ;
+
+        
+    
+    
+                marker_079e985f03e9092cf573ec339986beda.setIcon(icon_6ac950b5b5b605ec7a15fafaa3bd6d4d);
+            
+    
+            var marker_20e27b56beb355ad2c4d232406a9ae33 = L.marker(
+                [-6.195224, 106.820094],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_6d0dcf4d197958a7c5beb35c4c91e7cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d80e8d837ddf2aabb8aaee5898453a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f81f251e4eb4a37fad3bd64fe8f364db = $(`<div id="html_f81f251e4eb4a37fad3bd64fe8f364db" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Sushi Go!</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, Lantai 5, FoodPrint, West Mall, Jl. MH Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Sushi, Japanese<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_9d80e8d837ddf2aabb8aaee5898453a0.setContent(html_f81f251e4eb4a37fad3bd64fe8f364db);
+            
+        
+
+        marker_20e27b56beb355ad2c4d232406a9ae33.bindPopup(popup_9d80e8d837ddf2aabb8aaee5898453a0)
+        ;
+
+        
+    
+    
+                marker_20e27b56beb355ad2c4d232406a9ae33.setIcon(icon_6d0dcf4d197958a7c5beb35c4c91e7cb);
+            
+    
+            var marker_2b3e08a7f87a424f6243a468101225be = L.marker(
+                [-6.194216, 106.836175],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_3a021524f00949f2d122bcee9c41cf89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_825b3db21e816f401e7da15da64e93db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55082068f0c61cfa5c557d98f5316ccf = $(`<div id="html_55082068f0c61cfa5c557d98f5316ccf" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Lara Djonggrang & La Bihzad Bar</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Teuku Cik Ditiro No. 4, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Jawa, Soto, Indonesian<br>       <b>Rating</b> : ⭐ 4.4<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_825b3db21e816f401e7da15da64e93db.setContent(html_55082068f0c61cfa5c557d98f5316ccf);
+            
+        
+
+        marker_2b3e08a7f87a424f6243a468101225be.bindPopup(popup_825b3db21e816f401e7da15da64e93db)
+        ;
+
+        
+    
+    
+                marker_2b3e08a7f87a424f6243a468101225be.setIcon(icon_3a021524f00949f2d122bcee9c41cf89);
+            
+    
+            var marker_9f386ed185608949788c7cf169423971 = L.marker(
+                [-6.197928, 106.828163],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_348a7a6527037021d47b6d439a5cf213 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dd52034ddd2363a386df0e07d461f50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48e0e08c47b531517e8cd6a2a110f725 = $(`<div id="html_48e0e08c47b531517e8cd6a2a110f725" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Quiznos Sub</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. HOS. Cokroaminoto No. 94, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Mexican, Italian<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_0dd52034ddd2363a386df0e07d461f50.setContent(html_48e0e08c47b531517e8cd6a2a110f725);
+            
+        
+
+        marker_9f386ed185608949788c7cf169423971.bindPopup(popup_0dd52034ddd2363a386df0e07d461f50)
+        ;
+
+        
+    
+    
+                marker_9f386ed185608949788c7cf169423971.setIcon(icon_348a7a6527037021d47b6d439a5cf213);
+            
+    
+            var marker_5883eee281127cac41ee0612e2ccbbc3 = L.marker(
+                [-6.1999, 106.843739],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_f946c7c81ff8354996031c4a26a0ad7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e1fb1319caed5bc46e357035fc79f06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52a849d1fb7ea05e3728fcfaeaf73f66 = $(`<div id="html_52a849d1fb7ea05e3728fcfaeaf73f66" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Pempek Megaria</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Metropole 21, Jl. Pegangsaan Timur No. 21, Cikini, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Palembang<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_4e1fb1319caed5bc46e357035fc79f06.setContent(html_52a849d1fb7ea05e3728fcfaeaf73f66);
+            
+        
+
+        marker_5883eee281127cac41ee0612e2ccbbc3.bindPopup(popup_4e1fb1319caed5bc46e357035fc79f06)
+        ;
+
+        
+    
+    
+                marker_5883eee281127cac41ee0612e2ccbbc3.setIcon(icon_f946c7c81ff8354996031c4a26a0ad7d);
+            
+    
+            var marker_d5ea79ed3ecb5a2435498fa980408263 = L.marker(
+                [-6.186924, 106.829166],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_a8f2ea7294e6b340963b8c37d92e0735 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ae214c393beaed690193967ab88b163 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d1a166610f40274376602a7bd6f9fd5 = $(`<div id="html_7d1a166610f40274376602a7bd6f9fd5" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Ocha & Bella - Morrissey</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Morrissey, Jl. KH Wahid Hasyim No. 70, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Italian, Western, Asian<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_4ae214c393beaed690193967ab88b163.setContent(html_7d1a166610f40274376602a7bd6f9fd5);
+            
+        
+
+        marker_d5ea79ed3ecb5a2435498fa980408263.bindPopup(popup_4ae214c393beaed690193967ab88b163)
+        ;
+
+        
+    
+    
+                marker_d5ea79ed3ecb5a2435498fa980408263.setIcon(icon_a8f2ea7294e6b340963b8c37d92e0735);
+            
+    
+            var marker_30f5e6d6c3dbaee532f7e610e7f989bd = L.marker(
+                [-6.22560451, 106.7977738],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_5eaa8f7ca69b9d323120a20fafc053a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba5d7784eb5df37af6a5ab696f2b980b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2c5040f87a6d8fa3ee6119e274e6243 = $(`<div id="html_b2c5040f87a6d8fa3ee6119e274e6243" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Cork & Screw Country Club</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Senayan National Golf Club - The Maj Senayan, Jl. Asia Afrika Pintu IX, Senayan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : European, Grill, Asian<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_ba5d7784eb5df37af6a5ab696f2b980b.setContent(html_b2c5040f87a6d8fa3ee6119e274e6243);
+            
+        
+
+        marker_30f5e6d6c3dbaee532f7e610e7f989bd.bindPopup(popup_ba5d7784eb5df37af6a5ab696f2b980b)
+        ;
+
+        
+    
+    
+                marker_30f5e6d6c3dbaee532f7e610e7f989bd.setIcon(icon_5eaa8f7ca69b9d323120a20fafc053a0);
+            
+    
+            var marker_74444c08c4c0e514fb99a8584c3e566a = L.marker(
+                [-6.20864099, 106.8284084],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_ae58be74c12201efc366a9e280de51f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_431352390e0e6fd3a41eb917d1aadb79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48ec761ca26f29cb478d78bdf19c7562 = $(`<div id="html_48ec761ca26f29cb478d78bdf19c7562" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Animale Restaurant</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : MD Place Bulding, Lantai 11, Jl. Setiabudi Selatan No. 7, Setiabudi, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : American, Mediterranean<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_431352390e0e6fd3a41eb917d1aadb79.setContent(html_48ec761ca26f29cb478d78bdf19c7562);
+            
+        
+
+        marker_74444c08c4c0e514fb99a8584c3e566a.bindPopup(popup_431352390e0e6fd3a41eb917d1aadb79)
+        ;
+
+        
+    
+    
+                marker_74444c08c4c0e514fb99a8584c3e566a.setIcon(icon_ae58be74c12201efc366a9e280de51f5);
+            
+    
+            var marker_d95d273683d27c7defd39d80026eafb3 = L.marker(
+                [-6.182015212, 106.8352611],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_7814c507cf3624b816b96c42b6bf0d3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f18ce5dd08cf7d82fdb9b64e489cfc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1198b9d07881dff54ade2733204d73f = $(`<div id="html_c1198b9d07881dff54ade2733204d73f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Shima - Aryaduta Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Aryaduta Jakarta, Jl. Prapatan No. 44 - 48, Gambir, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Japanese<br>       <b>Rating</b> : ⭐ 3.9<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_9f18ce5dd08cf7d82fdb9b64e489cfc7.setContent(html_c1198b9d07881dff54ade2733204d73f);
+            
+        
+
+        marker_d95d273683d27c7defd39d80026eafb3.bindPopup(popup_9f18ce5dd08cf7d82fdb9b64e489cfc7)
+        ;
+
+        
+    
+    
+                marker_d95d273683d27c7defd39d80026eafb3.setIcon(icon_7814c507cf3624b816b96c42b6bf0d3c);
+            
+    
+            var marker_51ef6a2fd4a7ae666a8171fc3a58f41e = L.marker(
+                [-6.229410102, 106.8026038],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_9c246707f7e5a4f31ccc06cc4eadaa7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dfa783745080efe6252d7a48bd360e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f00dac80ca3f07261fa9c3c3c6eb613 = $(`<div id="html_7f00dac80ca3f07261fa9c3c3c6eb613" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">On Three</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Senopati Suites 3, 3rd Floor, Jl. Senopati Raya 41, Kebayoran Baru, RT.8/RW.2, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe, Desserts, Coffee, Tea<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_9dfa783745080efe6252d7a48bd360e4.setContent(html_7f00dac80ca3f07261fa9c3c3c6eb613);
+            
+        
+
+        marker_51ef6a2fd4a7ae666a8171fc3a58f41e.bindPopup(popup_9dfa783745080efe6252d7a48bd360e4)
+        ;
+
+        
+    
+    
+                marker_51ef6a2fd4a7ae666a8171fc3a58f41e.setIcon(icon_9c246707f7e5a4f31ccc06cc4eadaa7c);
+            
+    
+            var marker_963c7262a20eab1e27b5197d07181504 = L.marker(
+                [-6.241156338, 106.8105197],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_4fa586df7415af0960dd293914ff9889 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_027bf912e082fc3e4a0c930404c15799 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_095ac3b14bb5e74acf439a17a26ae104 = $(`<div id="html_095ac3b14bb5e74acf439a17a26ae104" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">BEAU Bakery</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Cikajang No. 29, Senopati, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Bakery, Western, Coffee, Tea<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_027bf912e082fc3e4a0c930404c15799.setContent(html_095ac3b14bb5e74acf439a17a26ae104);
+            
+        
+
+        marker_963c7262a20eab1e27b5197d07181504.bindPopup(popup_027bf912e082fc3e4a0c930404c15799)
+        ;
+
+        
+    
+    
+                marker_963c7262a20eab1e27b5197d07181504.setIcon(icon_4fa586df7415af0960dd293914ff9889);
+            
+    
+            var marker_9e1aad5bdb7aa2ab5fcef13bd17b53f5 = L.marker(
+                [-6.21644471, 106.8299627],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_995b8f148a67241944ed36c6013cee9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fdc884401775e41ba6fb059e14a8313 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0f550591350032aaacb75f2d508fd16 = $(`<div id="html_b0f550591350032aaacb75f2d508fd16" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">ST. ALi</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Setiabudi One, Lantai Ground, Jl. HR Rasuna Said, Setiabudi, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Coffee, Australian<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_7fdc884401775e41ba6fb059e14a8313.setContent(html_b0f550591350032aaacb75f2d508fd16);
+            
+        
+
+        marker_9e1aad5bdb7aa2ab5fcef13bd17b53f5.bindPopup(popup_7fdc884401775e41ba6fb059e14a8313)
+        ;
+
+        
+    
+    
+                marker_9e1aad5bdb7aa2ab5fcef13bd17b53f5.setIcon(icon_995b8f148a67241944ed36c6013cee9c);
+            
+    
+            var marker_181e22a6a4f00e90fb5be809d6322fef = L.marker(
+                [-6.290898, 106.78],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_45ec0e5663581a5234bc1e4b78219541 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ff1e0e60b5d0d8cc243afeebad1132b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d11d104d847e0ceb46fece9b8ac36df7 = $(`<div id="html_d11d104d847e0ceb46fece9b8ac36df7" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Karumba! Rooftop -  Mercure Jakarta Simatupang</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Mercure Jakarta Simatupang, Lantai 19, Jl. RA Kartini No. 18, Lebak Bulus, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Italian, Asian, Western<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_0ff1e0e60b5d0d8cc243afeebad1132b.setContent(html_d11d104d847e0ceb46fece9b8ac36df7);
+            
+        
+
+        marker_181e22a6a4f00e90fb5be809d6322fef.bindPopup(popup_0ff1e0e60b5d0d8cc243afeebad1132b)
+        ;
+
+        
+    
+    
+                marker_181e22a6a4f00e90fb5be809d6322fef.setIcon(icon_45ec0e5663581a5234bc1e4b78219541);
+            
+    
+            var marker_05f733a2745b854fed9ed76abe187afa = L.marker(
+                [-6.19828, 106.838072],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_ded81f1694624e68daa83f1c64265c5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51df47ae06022646fdeea68f8b5ba1ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_770d44ee4c2389b14c34cfb207472053 = $(`<div id="html_770d44ee4c2389b14c34cfb207472053" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">L'Avenue - The Hermitage</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : The Hermitage, Jl. Cilacap No. 1, Menteng, Jakarta 10310<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : French, Indonesian<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_51df47ae06022646fdeea68f8b5ba1ca.setContent(html_770d44ee4c2389b14c34cfb207472053);
+            
+        
+
+        marker_05f733a2745b854fed9ed76abe187afa.bindPopup(popup_51df47ae06022646fdeea68f8b5ba1ca)
+        ;
+
+        
+    
+    
+                marker_05f733a2745b854fed9ed76abe187afa.setIcon(icon_ded81f1694624e68daa83f1c64265c5e);
+            
+    
+            var marker_ddd46173a6ad4d6930fa9a02770b7259 = L.marker(
+                [-6.196308, 106.822356],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_03cb9f3e5104176eaceb12a8379930c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83c91cc8b40c333259461a280a61a06c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5638b50557c3c741f757d6b48d553957 = $(`<div id="html_5638b50557c3c741f757d6b48d553957" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Nomz Kitchen & Pastry</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Grand Indonesia Mall, East Mall, Lantai Ground, Jl. M.H. Thamrin No. 1, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western, Asian<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_83c91cc8b40c333259461a280a61a06c.setContent(html_5638b50557c3c741f757d6b48d553957);
+            
+        
+
+        marker_ddd46173a6ad4d6930fa9a02770b7259.bindPopup(popup_83c91cc8b40c333259461a280a61a06c)
+        ;
+
+        
+    
+    
+                marker_ddd46173a6ad4d6930fa9a02770b7259.setIcon(icon_03cb9f3e5104176eaceb12a8379930c0);
+            
+    
+            var marker_eba9d9789c1df4a596a93bd56e6493f1 = L.marker(
+                [-6.22836955, 106.8086173],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_de7c4831ced8239e86399c45c9ebcef0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9d25ffdd96f68883bd331cafd22dfce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dcb5767b94935f112c85866606441f40 = $(`<div id="html_dcb5767b94935f112c85866606441f40" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Empirica Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Lot 8, Jl. Jenderal Sudirman, SCBD, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Drinks Only, Finger Food<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_f9d25ffdd96f68883bd331cafd22dfce.setContent(html_dcb5767b94935f112c85866606441f40);
+            
+        
+
+        marker_eba9d9789c1df4a596a93bd56e6493f1.bindPopup(popup_f9d25ffdd96f68883bd331cafd22dfce)
+        ;
+
+        
+    
+    
+                marker_eba9d9789c1df4a596a93bd56e6493f1.setIcon(icon_de7c4831ced8239e86399c45c9ebcef0);
+            
+    
+            var marker_7151a8e1b45ef5cb77825b5297386ed8 = L.marker(
+                [-6.183679, 106.82735],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_16b44ab334b380db5616a0018fc85b85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_363bcdb2817da8380695fcb8ea13de55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_095d9d727e2003e4422ca1f0e8b5d819 = $(`<div id="html_095d9d727e2003e4422ca1f0e8b5d819" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Penang Bistro</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Lantai 1-3, Jl. Kebon Sirih No. 59, Menteng, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Peranakan, Malaysian, Singaporean<br>       <b>Rating</b> : ⭐ 4.5<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_363bcdb2817da8380695fcb8ea13de55.setContent(html_095d9d727e2003e4422ca1f0e8b5d819);
+            
+        
+
+        marker_7151a8e1b45ef5cb77825b5297386ed8.bindPopup(popup_363bcdb2817da8380695fcb8ea13de55)
+        ;
+
+        
+    
+    
+                marker_7151a8e1b45ef5cb77825b5297386ed8.setIcon(icon_16b44ab334b380db5616a0018fc85b85);
+            
+    
+            var marker_4b4f86cd03a8afc47a4239034e111974 = L.marker(
+                [-6.221989538, 106.8335542],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_77d754d1356599fac053f3b48a1d71b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c184d6455285ba573c6112877604a755 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b189b0e2e321470e406e4ab66d8544d2 = $(`<div id="html_b189b0e2e321470e406e4ab66d8544d2" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Lucky Cat Coffee & Kitchen</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Plaza Festival, South Parking, Jl. H.R. Rasuna Said, Kuningan, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe, Western<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_c184d6455285ba573c6112877604a755.setContent(html_b189b0e2e321470e406e4ab66d8544d2);
+            
+        
+
+        marker_4b4f86cd03a8afc47a4239034e111974.bindPopup(popup_c184d6455285ba573c6112877604a755)
+        ;
+
+        
+    
+    
+                marker_4b4f86cd03a8afc47a4239034e111974.setIcon(icon_77d754d1356599fac053f3b48a1d71b2);
+            
+    
+            var marker_4bef7e0af05e4f76bbecc3a7fd25cab6 = L.marker(
+                [-6.217553947, 106.8300998],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_4cfb9b0c5a0be8f0428885df56cece86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6149726953ba53069f1017fcc281842 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c61d641b58c4758579b9a72153f96714 = $(`<div id="html_c61d641b58c4758579b9a72153f96714" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Pokenbir</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Lippo Kuningan, Jl. HR Rasuna Said, Setiabudi, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Asian, Western<br>       <b>Rating</b> : ⭐ 4.9<br>       <b>Kelas Rating</b> : Tinggi     </div>     </div>`)[0];
+                popup_d6149726953ba53069f1017fcc281842.setContent(html_c61d641b58c4758579b9a72153f96714);
+            
+        
+
+        marker_4bef7e0af05e4f76bbecc3a7fd25cab6.bindPopup(popup_d6149726953ba53069f1017fcc281842)
+        ;
+
+        
+    
+    
+                marker_4bef7e0af05e4f76bbecc3a7fd25cab6.setIcon(icon_4cfb9b0c5a0be8f0428885df56cece86);
+            
+    
+            var marker_b962d871fee170d176b9955a8d0736a7 = L.marker(
+                [-6.196107, 106.82364],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_09ef6d220809d03bf7fc044fdb7ff839 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5e14b6eb238fc226737e505730e2b0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef921eac12abc2a2cd5a7faa44891cd1 = $(`<div id="html_ef921eac12abc2a2cd5a7faa44891cd1" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">The Mandarin Cake Shop - Mandarin Oriental, Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Hotel Mandarin Oriental, Jakarta, Jl. M. H. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Bakery, Desserts<br>       <b>Rating</b> : ⭐ 4.0<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_a5e14b6eb238fc226737e505730e2b0d.setContent(html_ef921eac12abc2a2cd5a7faa44891cd1);
+            
+        
+
+        marker_b962d871fee170d176b9955a8d0736a7.bindPopup(popup_a5e14b6eb238fc226737e505730e2b0d)
+        ;
+
+        
+    
+    
+                marker_b962d871fee170d176b9955a8d0736a7.setIcon(icon_09ef6d220809d03bf7fc044fdb7ff839);
+            
+    
+            var marker_993c202cfa76b2db47c7c505d08431fd = L.marker(
+                [-6.193415, 106.821894],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_9aafb1fb634f01382aeacc60b08d2bd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fc13ef9a0ce1f6d70f55843c5376cb5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca210e65d5c1ddccf3471599d85a264f = $(`<div id="html_ca210e65d5c1ddccf3471599d85a264f" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Cork&Screw</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Plaza Indonesia, Lantai 1, Jl. M. H. Thamrin, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : European, Grill, Asian<br>       <b>Rating</b> : ⭐ 4.3<br>       <b>Kelas Rating</b> : Sedang     </div>     </div>`)[0];
+                popup_3fc13ef9a0ce1f6d70f55843c5376cb5.setContent(html_ca210e65d5c1ddccf3471599d85a264f);
+            
+        
+
+        marker_993c202cfa76b2db47c7c505d08431fd.bindPopup(popup_3fc13ef9a0ce1f6d70f55843c5376cb5)
+        ;
+
+        
+    
+    
+                marker_993c202cfa76b2db47c7c505d08431fd.setIcon(icon_9aafb1fb634f01382aeacc60b08d2bd7);
+            
+    
+            var marker_1d4567561b28126c0194581255e6df9a = L.marker(
+                [-6.183509, 106.824656],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_94b08f9beca2e9439b4fb36f7c585430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d148536a0ee62d8042bf45112c09bf74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a84a41d1ad5e6b1ac4fb975490d6417 = $(`<div id="html_4a84a41d1ad5e6b1ac4fb975490d6417" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">Sabang 16</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Jl. Sabang No. 16 B, Thamrin, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Cafe<br>       <b>Rating</b> : ⭐ 4.2<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_d148536a0ee62d8042bf45112c09bf74.setContent(html_4a84a41d1ad5e6b1ac4fb975490d6417);
+            
+        
+
+        marker_1d4567561b28126c0194581255e6df9a.bindPopup(popup_d148536a0ee62d8042bf45112c09bf74)
+        ;
+
+        
+    
+    
+                marker_1d4567561b28126c0194581255e6df9a.setIcon(icon_94b08f9beca2e9439b4fb36f7c585430);
+            
+    
+            var marker_6c238659eff5246c43ce80516bb9ea5a = L.marker(
+                [-6.224680938, 106.8240189],
+                {
+}
+            ).addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+            var icon_f129bea52e8398a1238f7999071d4760 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7127463ccc3f2eb8f6f349e2aa4f3105 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55bf29e389d1854f205cac972c3deb67 = $(`<div id="html_55bf29e389d1854f205cac972c3deb67" style="width: 100.0%; height: 100.0%;">     <div style="width:250px">       <h4 style="margin-bottom:5px;">The Writers Bar - Raffles Jakarta</h4>       <hr style="margin:4px 0;">       <b>Alamat</b> : Raffles Jakarta, Jl. Prof. Dr. Satrio No. 3 - 5, Karet, Jakarta<br>       <b>Provinsi</b> : Jakarta<br>       <b>Kategori</b> : Western<br>       <b>Rating</b> : ⭐ 4.1<br>       <b>Kelas Rating</b> : Rendah     </div>     </div>`)[0];
+                popup_7127463ccc3f2eb8f6f349e2aa4f3105.setContent(html_55bf29e389d1854f205cac972c3deb67);
+            
+        
+
+        marker_6c238659eff5246c43ce80516bb9ea5a.bindPopup(popup_7127463ccc3f2eb8f6f349e2aa4f3105)
+        ;
+
+        
+    
+    
+                marker_6c238659eff5246c43ce80516bb9ea5a.setIcon(icon_f129bea52e8398a1238f7999071d4760);
+            
+    
+            tile_layer_8993323b5e4a3bd921d9fcee1689d904.addTo(map_7f752a7f64ad40de1f472adc815d4f71);
+        
+    
+                marker_b38e50af1614c4b710dd49fce149a567.setIcon(icon_c3d8dc98afbb7389b85751995431b3a6);
+            
+    
+                marker_3631d4758bd3b56d70214b970f3eacb2.setIcon(icon_1990ad6e893552788e44449eec5c8d65);
+            
+    
+                marker_b57ed7e85a60849eb7ecfe3bc7e0818d.setIcon(icon_91c604bb559b5622e66b397ec3287012);
+            
+    
+                marker_1f4002828f9263e6b33cb73c96fbbd5b.setIcon(icon_48ab0f51dc7a8a69ec76b985130c9590);
+            
+    
+                marker_3c9b7e667540f883b9c6e46c114e2cc6.setIcon(icon_9cf1ec7691572b803348e90cf91f23a7);
+            
+    
+                marker_8edd0ba790278d4c4c604631ed387b9f.setIcon(icon_3bd163a5a7199e70b6f8a3b7a10922fa);
+            
+    
+                marker_ca5c469dde0df59c5dbaff328350bd79.setIcon(icon_541b98203bb48cf3f64b23f7cd82dedb);
+            
+    
+                marker_28d0da8e7eb0a8cd6c181ae86bb33906.setIcon(icon_55c54a95de5c71ac678b3cffdcb4fe1f);
+            
+    
+                marker_8cca44e067a6c8cb89281d15543f609d.setIcon(icon_5674e71378f5fc75ec7dc4ec6d7e4712);
+            
+    
+                marker_493ac0b756dfab72d393bef532adade1.setIcon(icon_923da2a397c18d47b4435c77b252c7fb);
+            
+    
+                marker_b0ef66ae7850468a70d230ccffd9b832.setIcon(icon_c50c4761c338856974060d4445864911);
+            
+    
+                marker_9ed481feecd0ee8d4a721911cd10e02e.setIcon(icon_a5be514db67c150e35e7704eb98a455b);
+            
+    
+                marker_2718e1c5e178639db1a73e896d0d6583.setIcon(icon_ed622d85f67baf6701a322faf7f15eec);
+            
+    
+                marker_e733d6c397a1dca865325c338082788e.setIcon(icon_f70aa1466801a965425f81c43b228b00);
+            
+    
+                marker_43a2f837b48a3bb36a14d146b656004b.setIcon(icon_d8a36b7dc38d7171bca8cb774ec3d3d3);
+            
+    
+                marker_b3302fb604226f08f73f2fc75072c6e9.setIcon(icon_9dc59915540b1c869d03d1940bd2ff98);
+            
+    
+                marker_4476f82383abe9e5dd79ab006ed3eb42.setIcon(icon_e86f8bccd5a734d4018bc2646041daaa);
+            
+    
+                marker_b44fcd5c025c3599810e8c4b7ae6df18.setIcon(icon_2a3ce88bc4b77e4d2c309db7b5fd9da4);
+            
+    
+                marker_2976f34c54602c6ffe2da43a0ff19f42.setIcon(icon_4cba1578b706a2e96dda5eb55b3aebab);
+            
+    
+                marker_f4a1aa0b1d419c4c1514f5b582605be4.setIcon(icon_e9fb311b7c9e9d77646689223e4cee14);
+            
+    
+                marker_c4e0d3e43f213e29424289f7ed2252cc.setIcon(icon_5dea5b68db51d471f7356d8eb5c90b49);
+            
+    
+                marker_e37c0d3337feb4a564237adaea86b336.setIcon(icon_6da4b8de25418b1b2d3080a2b6c5d055);
+            
+    
+                marker_2ceace049fd90fe69faec79e627c5977.setIcon(icon_2fd9c764b02308d5741d538954484843);
+            
+    
+                marker_a6b260c3e8c013f35b49611469b99e90.setIcon(icon_3b5492b4e26ce64e87988b6d00060786);
+            
+    
+                marker_d07e1caa5aa4ef17a0da4225e3562db4.setIcon(icon_ff6d1b2d238fd540ef0d10df6b31fd61);
+            
+    
+                marker_19b3a409b2ae8b4b1b6a92211200597e.setIcon(icon_dd33055282102c52f25decfcca943085);
+            
+    
+                marker_ed402bfd78f416e011881eb64b49c947.setIcon(icon_08ed0291354db11bb8b19d9c3c781aab);
+            
+    
+                marker_d59852791564a800747b08c608397b2d.setIcon(icon_a3bf248ef6b08f98376fd159d0432fe6);
+            
+    
+                marker_73959a5649de2ba266de9e4386a9e408.setIcon(icon_40240d12339bffba1570a31a6423ffef);
+            
+    
+                marker_d18348be342c9d048dd042dc5cf63018.setIcon(icon_153a888d9b0d937a3a1d0fa3ccb62680);
+            
+    
+                marker_1150337d11baeba0941ae681ddd512be.setIcon(icon_9cec901d178256e5c7c283daeaaab9d6);
+            
+    
+                marker_ce82f637bbd7731a93e5f05c40d1253e.setIcon(icon_a78dd6b8472c63d1d646c5e78ee3d5a8);
+            
+    
+                marker_902669513bbcadd3ccb065d67b1b6abe.setIcon(icon_5e7b6768528d9d79475a5cc744736aec);
+            
+    
+                marker_2dbc0ff632a39a34a04212ca627ba548.setIcon(icon_8d72ee24993897df06c9824e45937c3e);
+            
+    
+                marker_99d842fba4a242ae94dd88841e8bb7cd.setIcon(icon_be9442ee8c98d6389ff7960bc6353fd8);
+            
+    
+                marker_ded94752f0f4f7b5a7ff39167e9d2071.setIcon(icon_44e8247fb01d9260bcdb68709f11f8ca);
+            
+    
+                marker_44e65436cd8fb21d2711101556798c15.setIcon(icon_889301eb2241b171c5ddd42737cc29e7);
+            
+    
+                marker_0fa1577053a6c8188e52b632b82b84f3.setIcon(icon_344a263320ab60220a67af3107f01786);
+            
+    
+                marker_ec0fd7bc062a6e2b51108d1d2dde82f8.setIcon(icon_6b3b603be73a95112c824903af3de52f);
+            
+    
+                marker_1a8bb293414c55e434b6a29c9b7e3d6f.setIcon(icon_56534f6cff9f7b79acf32bbcdb77ada1);
+            
+    
+                marker_843b7ed1d09bae7795e75426f1b19eb9.setIcon(icon_44ff0473557e6f776549059a81cd065f);
+            
+    
+                marker_4f7efd1ede224e01a86f9e0d98a48779.setIcon(icon_beeae3ba4782fee21d9296d968fb31da);
+            
+    
+                marker_c44bdce7b06a9aa9bca96a027ed17cb3.setIcon(icon_6df4e15a84619ec25ce841e6f6078830);
+            
+    
+                marker_ff541657a57dedf84c72f9e77a76c482.setIcon(icon_8f4cb5127b0838d042d9ffb92af3b51e);
+            
+    
+                marker_af5ee2f0c7f9a2d54dbe19fd7f7e476a.setIcon(icon_876fc7fa07b00b3ee5289019908dc9b9);
+            
+    
+                marker_1ef5357cc4a509c959b5638ced229878.setIcon(icon_706a320aaa6ebd39d57f86803e1d1625);
+            
+    
+                marker_57342a0e595bfbd14cc161baebcce2ff.setIcon(icon_f95a5638a42fdaff9668ea70afe031b1);
+            
+    
+                marker_e247ae6e9ddcfcb43613cc701e23b882.setIcon(icon_5c92f4f39bb89b1890565a449f0c2f5c);
+            
+    
+                marker_94b59e65e866cba0e4da8797dd18ce9c.setIcon(icon_2d2942d2f0016dc0869251814cf5f93e);
+            
+    
+                marker_ef8417c3147633aacebe968fe000f170.setIcon(icon_cf57cee2faccb8251183db8e531e6143);
+            
+    
+                marker_7fea68cd22a6f91bb37f15a5ac3d877a.setIcon(icon_973d66b87b2564cc7b0f6ad9106a4685);
+            
+    
+                marker_7ba96e59cf982dfa301748b25b119a4c.setIcon(icon_44fdfef38360a44338e84d5ca69080ad);
+            
+    
+                marker_b9aba238c23450a52aa7af7e1d6b9568.setIcon(icon_2b0175de617413f13aa1763459e1e6b8);
+            
+    
+                marker_a026805d3b082b0262dfb4bee0fcb39e.setIcon(icon_7bc563ef294e61b9a5717d031df5e245);
+            
+    
+                marker_a8ded7293918ef44b96de1b784d5a82e.setIcon(icon_a3cf3d034aa095da96c27d025a85c0bb);
+            
+    
+                marker_bb3af8f418b33f9463fce62b376b4bb4.setIcon(icon_a61f3e71dec7236cb2a6490b97bf7c98);
+            
+    
+                marker_a406bc1029a50ccb8aaa48c7892c030e.setIcon(icon_9c42b1ede7b3b41451f5db7662bb3a4c);
+            
+    
+                marker_4588467f1ec21339f93d031923791fdd.setIcon(icon_77151dfe6e0b301c785cdec0baa70f7b);
+            
+    
+                marker_3fc3527e81bcd7c9278d263e89edb15b.setIcon(icon_3375b98703cade75198f0a0949a6ce25);
+            
+    
+                marker_68bb7f226ad6480e85f1978f705a7bd8.setIcon(icon_1568022e0064898add56bc572e978e48);
+            
+    
+                marker_1481387001ba66b976e9c4b9316bd42b.setIcon(icon_36a0b91ae24fb7facaf88b231cc66aee);
+            
+    
+                marker_7437316ba32f8548c45e95564066eb17.setIcon(icon_4b78dde25b79e2cbff7599ec59993394);
+            
+    
+                marker_e004ca4078b8bf5958962ed0f521433a.setIcon(icon_ed4eac62b1000f1cee4c8f16edffde61);
+            
+    
+                marker_4149b0dd85e8bfc28b617e209a28b318.setIcon(icon_80b693f04245c70ee18030609b3fb885);
+            
+    
+                marker_72befb15187e60dc79175fc6ecfef61f.setIcon(icon_3b858a967d7845f1c861146f52e05281);
+            
+    
+                marker_cc6638b7fc638f627b98084841d0a107.setIcon(icon_ce915fe44ee216b2c57a581e9e140708);
+            
+    
+                marker_383bb7eb1297d8491a5d9c48fb7845ac.setIcon(icon_fe5049e0de0788117ec7dc645484c7f2);
+            
+    
+                marker_ed9ccfab30ee13a4defb4ae4fefdfe83.setIcon(icon_5d4a64fa5237bad36943400af1361ec3);
+            
+    
+                marker_cacd6347d3d14d81008ae657e3b4f0ae.setIcon(icon_ae9bd749014d53ce8058e497362fd656);
+            
+    
+                marker_b61902f6d8be966f61f699f94b4a1fc2.setIcon(icon_608bc282546da523bab0a5be26337638);
+            
+    
+                marker_10bd7bd3a4e05aaee80d1052be10f12a.setIcon(icon_d57a3490a24195ba69a361c3479bf31b);
+            
+    
+                marker_d7eb78906c7cfe01c1df90f5c13a5586.setIcon(icon_24cfc2acd0c4d8d581897a7f9e1b84f8);
+            
+    
+                marker_9f5036391a13e670843c6d2dddfdc6e7.setIcon(icon_b37a909d27c0499a0332885ee7983741);
+            
+    
+                marker_40ee32200be96daa8aa30d1f84b9ec09.setIcon(icon_d11cd9f6a82fcf1600a9f8f06f91506b);
+            
+    
+                marker_3c2b028cb95f3b898ba2a063af0fd2e1.setIcon(icon_c2cc364f9cc343cad7274811fc0bd231);
+            
+    
+                marker_1ccfa14925cdf584c04647c74969edd4.setIcon(icon_20d5865999c03e488ff86c5281363946);
+            
+    
+                marker_b8655ea7fba98dd6f680ae84335202e9.setIcon(icon_eea7ed31bc31dd639ecbca2b29a66262);
+            
+    
+                marker_079e985f03e9092cf573ec339986beda.setIcon(icon_6ac950b5b5b605ec7a15fafaa3bd6d4d);
+            
+    
+                marker_20e27b56beb355ad2c4d232406a9ae33.setIcon(icon_6d0dcf4d197958a7c5beb35c4c91e7cb);
+            
+    
+                marker_2b3e08a7f87a424f6243a468101225be.setIcon(icon_3a021524f00949f2d122bcee9c41cf89);
+            
+    
+                marker_9f386ed185608949788c7cf169423971.setIcon(icon_348a7a6527037021d47b6d439a5cf213);
+            
+    
+                marker_5883eee281127cac41ee0612e2ccbbc3.setIcon(icon_f946c7c81ff8354996031c4a26a0ad7d);
+            
+    
+                marker_d5ea79ed3ecb5a2435498fa980408263.setIcon(icon_a8f2ea7294e6b340963b8c37d92e0735);
+            
+    
+                marker_30f5e6d6c3dbaee532f7e610e7f989bd.setIcon(icon_5eaa8f7ca69b9d323120a20fafc053a0);
+            
+    
+                marker_74444c08c4c0e514fb99a8584c3e566a.setIcon(icon_ae58be74c12201efc366a9e280de51f5);
+            
+    
+                marker_d95d273683d27c7defd39d80026eafb3.setIcon(icon_7814c507cf3624b816b96c42b6bf0d3c);
+            
+    
+                marker_51ef6a2fd4a7ae666a8171fc3a58f41e.setIcon(icon_9c246707f7e5a4f31ccc06cc4eadaa7c);
+            
+    
+                marker_963c7262a20eab1e27b5197d07181504.setIcon(icon_4fa586df7415af0960dd293914ff9889);
+            
+    
+                marker_9e1aad5bdb7aa2ab5fcef13bd17b53f5.setIcon(icon_995b8f148a67241944ed36c6013cee9c);
+            
+    
+                marker_181e22a6a4f00e90fb5be809d6322fef.setIcon(icon_45ec0e5663581a5234bc1e4b78219541);
+            
+    
+                marker_05f733a2745b854fed9ed76abe187afa.setIcon(icon_ded81f1694624e68daa83f1c64265c5e);
+            
+    
+                marker_ddd46173a6ad4d6930fa9a02770b7259.setIcon(icon_03cb9f3e5104176eaceb12a8379930c0);
+            
+    
+                marker_eba9d9789c1df4a596a93bd56e6493f1.setIcon(icon_de7c4831ced8239e86399c45c9ebcef0);
+            
+    
+                marker_7151a8e1b45ef5cb77825b5297386ed8.setIcon(icon_16b44ab334b380db5616a0018fc85b85);
+            
+    
+                marker_4b4f86cd03a8afc47a4239034e111974.setIcon(icon_77d754d1356599fac053f3b48a1d71b2);
+            
+    
+                marker_4bef7e0af05e4f76bbecc3a7fd25cab6.setIcon(icon_4cfb9b0c5a0be8f0428885df56cece86);
+            
+    
+                marker_b962d871fee170d176b9955a8d0736a7.setIcon(icon_09ef6d220809d03bf7fc044fdb7ff839);
+            
+    
+                marker_993c202cfa76b2db47c7c505d08431fd.setIcon(icon_9aafb1fb634f01382aeacc60b08d2bd7);
+            
+    
+                marker_1d4567561b28126c0194581255e6df9a.setIcon(icon_94b08f9beca2e9439b4fb36f7c585430);
+            
+    
+                marker_6c238659eff5246c43ce80516bb9ea5a.setIcon(icon_f129bea52e8398a1238f7999071d4760);
+            
+</script>
+</html>
